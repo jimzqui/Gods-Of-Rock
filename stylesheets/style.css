@@ -1,0 +1,1627 @@
+/**
+ * Gods of Rock
+ * Copyright (c) 2010 Disruptor Beam LLC
+ * By Jimbo Quijano - jimzqui@yahoo.com
+ *
+ * style.css
+ * Sets up the main and basic styles.
+ *
+ * 01. GENERAL LAYOUT 
+ *	   1. Main
+ *	   2. Logo & Level
+ *	   3. Side Menu
+ *	   4. Stats Menu
+ *	   5. Experience
+ *	   6. Footer
+ *	   7. Buff Bar
+ *	
+ * 02. JS RELATED
+ *	   1. Tooltip
+ *	   3. Tabs
+ *
+ * 03. COMMON STYLES
+ *	   1. Buttons
+ *     2. Profile Activity
+ *     3. Item Chooser
+ *     4. Modal Misc
+ */
+
+
+/* ----------------------------------------------------------------------------------------------------------------
+                                                  01. GENERAL LAYOUT
+---------------------------------------------------------------------------------------------------------------- */
+
+
+/* ------- 1. Main ------- */
+
+html, #wrapper {
+height: 100%;
+}
+
+body > #wrapper{
+min-height: 100%;
+}
+
+body{
+font-family:arial,verdana,sans-serif;
+font-size:12px;
+color:#fff;
+background:#fff;
+margin:0;
+}
+
+#wrapper{
+background:#000 url(../images/background3.png);
+background-repeat: no-repeat;
+background-position: -15px 340px; 
+margin:0 auto;
+width:760px;
+height:auto;
+overflow:none;
+padding:0 0 10px;
+}
+
+#leftwrap{
+background:url(../images/top-gradient.png) no-repeat;
+width:175px;
+height:auto;
+float:left;
+}
+
+#rightwrap{
+background:url(../images/top-gradient.png) no-repeat;
+width:565px;
+height:auto;
+float:left;
+padding:0 10px;
+}
+
+#content{
+width:535px;
+float:left;
+padding:0 15px;
+border:1px dashed #737373;
+background-image:url(../images/content-bg.png);
+-moz-border-radius:5px;
+-moz-border-radius-topleft:0;
+}
+
+#content.notab{
+border:none;
+}
+
+#content textarea{
+width:100%;
+}
+
+#inner{
+display:block;
+min-height:725px;
+margin:0;
+}
+
+/* ------- 2. Logo & Level ------- */
+
+#logowrap{
+background:url(../images/logowrap-bg.png) no-repeat scroll 0.1em 0;
+display:block;
+height:115px;
+}
+
+#logo{
+background:url(../images/logo.png) no-repeat;
+width:155px;
+height:73px;
+margin:15px 0 0 10px;
+}
+
+#level{
+display:block;
+margin:5px 0 0;
+text-align:center;
+}
+
+/* ------- 3. Side Menu ------- */
+
+#stagename{
+background:url(../images/talentswrap-bg.png) repeat-x;
+display:block;
+height:19px;
+text-align:center;
+}
+
+#sidemenu{
+display:block;
+height:auto;
+overflow:hidden;
+}
+
+#leftnav{
+float:left;
+height:auto;
+width:175px;
+}
+
+#leftnav ul{
+list-style:none;
+margin:0;
+padding:7px 0 0;
+float:left;
+width:100%;
+}
+
+#leftnav ul li{
+float:left;
+margin:0 0 5px;
+padding:0 0 0 10px;
+width:165px;
+}
+
+#leftnav ul li.active{
+background:url(../images/leftnav/leftnav-li-active.png) no-repeat;
+}
+
+#leftnav ul li a{
+color:#fff;
+float:left;
+font-family:farmers-market;
+font-size:18px;
+word-spacing:-6px;
+padding:2px 0;
+width:100%;
+text-decoration:none;
+}
+
+#leftnav ul li a:hover{
+color:#3897b2;
+text-decoration:none;
+}
+
+#leftnav ul li a span{
+float:left;
+}
+
+.gift-alert{
+height:0;
+left:55px;
+position:relative;
+top:80px;
+width:1px;
+}
+
+/* ------- 4. Stats Menu ------- */
+
+#header{
+display:block;
+height:115px;
+font-size:15px;
+font-weight:bold;
+line-height:15px;
+}
+
+#statsmenu{
+width:372px;
+height:115px;
+float:left;
+}
+
+#statsmenu ul{
+list-style:none;
+margin:0;
+padding:0;
+display:block;
+height:115px;
+}
+
+#statsmenu ul li{
+width:93px;
+float:left;
+}
+
+#statsmenu ul li a{
+display:block;
+height:115px;
+}
+
+#statsmenu ul li a:hover{
+text-decoration:none;
+}
+
+#statsmenu ul li a.energy{
+background:url(../images/stats/energy-icon.png) no-repeat scroll center 6px;
+color:#2a7a90;
+}
+
+#statsmenu ul li a.inspiration{
+background:url(../images/stats/inspiration-icon.png) no-repeat scroll center 6px;
+color:#b90104;
+}
+
+#statsmenu ul li a.funds{
+background:url(../images/stats/funds-icon.png) no-repeat scroll center 0;
+color:#439e30;
+}
+
+#statsmenu ul li a.fans{
+background:url(../images/stats/fans-icon.png) no-repeat scroll center 2px;
+color:#f4ad00;
+}
+
+#statsmenu ul li a span.statsname{
+float:left;
+overflow:hidden;
+text-indent:3000px;
+white-space:nowrap;
+height:7px;
+margin-top:60px;
+}
+
+#statsmenu ul li a.energy span.statsname{
+background:url(../images/stats/energy.png) no-repeat;
+width:39px;
+margin-left:25px;
+}
+
+#statsmenu ul li a.inspiration span.statsname{
+background:url(../images/stats/inspiration.png) no-repeat;
+width:58px;
+margin-left:17px;
+}
+
+#statsmenu ul li a.funds span.statsname{
+background:url(../images/stats/funds.png) no-repeat;
+width:30px;
+margin-left:32px;
+}
+
+#statsmenu ul li a.fans span.statsname{
+background:url(../images/stats/fans.png) no-repeat;
+width:22px;
+margin-left:35px;
+}
+
+#statsmenu ul li a span.statsnum, #statsmenu ul li a span.statsinfo{
+float:left;
+width:100%;
+text-align:center;
+margin:6px 0 0;
+}
+
+#statsmenu ul li a span.statsinfo{
+font-size:10px;
+text-transform:uppercase;
+line-height:10px;
+}
+
+#statsmenu-gradient{
+width:373px;
+height:59px;
+position:relative;
+top:-95px;
+left:0;
+z-index:-99;
+}
+
+var.energy{
+color:#2a7a90;
+}
+
+var.inspiration{
+color:#b90104;
+}
+
+var.funds{
+color:#439e30;
+}
+
+var.experience{
+color:#C430DF;
+}
+
+var.fans{
+color:#f4ad00;
+}
+
+/* ------- 5. Experience ------- */
+
+#xpwrap{
+width:193px;
+height:95px;
+float:right;
+margin:0;
+}
+
+#xpbar{
+background:url(../images/stats/levelbar-bg.png) no-repeat scroll 2px -15px;
+width:203px;
+height:95px;
+float:right;
+}
+
+#xpbar .level, #xpbar .xp, #xpbar .progressbar{
+color:#c430df;
+}
+
+#xpbar .xp{
+padding:0 0 0 30px;
+margin:30px 0 0;
+width:170px;
+float:left;
+}
+
+#xpbar .progressbar{
+width:143px;
+height:13px;
+float:left;
+position:relative;
+top:15px;
+left:31px;
+}
+
+.progressbar .progress{
+position:absolute;
+top:2px;
+height:9px;
+}
+
+.progressbar .guitarfrets{
+background:url(../images/stats/guitarfrets.png) no-repeat;
+position:absolute;
+width:143px;
+height:13px;
+}
+
+#xpbar .xp span{
+float:left;
+}
+
+#xpbar .xp span.xp-label{
+background:url(../images/stats/experience.png) no-repeat;
+width:54px;
+height:7px;
+overflow:hidden;
+text-indent:3000px;
+white-space:nowrap;
+}
+
+#xpbar .xp span.experience{
+margin:5px 0 0;
+width:100%;
+float:left;
+}
+
+/* ------- 7. Footer ------- */
+
+#footer{
+margin:0 auto;
+padding:15px 0;
+width:760px;
+text-align:center;
+}
+
+#footer p{
+margin:0;
+}
+
+/* ------- 8. Buff Bar ------- */
+
+#buffbar{
+float:right;
+width:64px;
+margin:5px 0 0;
+}
+
+.buffitem{
+border:1px solid #2a2a2a;
+width:26px;
+height:27px;
+float:left;
+margin:0 0 0 3px;
+text-align:center;
+position:relative;
+}
+
+.buffitem img{
+position:absolute;
+left:0;
+bottom:0;
+}
+
+.buffitem.first{
+margin:0;
+}
+
+
+/*----------------------------------------------------------------------------------------------------------------
+											  02. JS RELATED
+----------------------------------------------------------------------------------------------------------------*/
+
+
+/* ------- 1. Tooltip ------- */
+
+#tooltip{
+background-color:#560908;
+border:1px dashed #ddd;
+opacity:0.9;
+padding:10px;
+position:absolute;
+width:auto;
+z-index:3000;
+}
+
+#tooltip h3, #tooltip .body{
+font-size:13px;
+color:#c4c4c4;
+line-height:17px;
+margin:0;
+}
+
+#tooltip .body span{
+color:#fff;
+line-height:17px;
+font-weight:bold;
+font-size:12px;
+}
+
+/* ------- 2. Tabs ------- */
+
+#maintabs{
+width:100%;
+float:left;
+height:26px;
+}
+
+ul.tabs{
+margin:0;
+padding:0;
+list-style:none;
+float:left;
+height:26px;
+width:auto;
+position:relative;
+z-index:1;
+}
+
+ul.tabs li{
+float:left;
+text-transform:uppercase;
+}
+
+ul.tabs li.active{
+background:url(../images/bg-tabs.png) repeat-x;
+border-top:1px dashed #737373;
+border-left:1px dashed #737373;
+border-right:1px dashed #737373;
+}
+
+ul.tabs li a{
+color:#696969;
+font-size:11px;
+font-weight:bold;
+cursor:pointer;
+padding:5px 10px 7px;
+float:left;
+}
+
+ul.tabsl li a:hover{
+color:#fff;
+}
+
+ul.tabs li.active a{
+color:#348da6;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------------
+                                                  03. COMMON STYLES
+---------------------------------------------------------------------------------------------------------------- */
+
+
+/* ------- 1. Buttons ------- */
+
+a.button{
+background:url(../images/actionbuttons/buttonleft.png) no-repeat scroll left 0;
+height:22px;
+float:left;
+cursor:pointer;
+}
+
+a.button:hover{
+text-decoration:none;
+opacity:0.9;
+}
+
+a.button span{
+background:url(../images/actionbuttons/buttonright.png) no-repeat scroll right 0;
+float:right;
+height:16px;
+margin:0 -10px 0 0;
+padding:3px 10px;
+}
+
+.editlogo{
+background:url(../images/actionbuttons/button-editlogo.png) no-repeat;
+width:81px;
+height:22px;
+}
+
+.recruitnow{
+background:url(../images/actionbuttons/button-recruitnow.png) no-repeat;
+width:166px;
+height:38px;
+}
+
+.recruitnow2{
+background:url(../images/actionbuttons/button-recruitnow2.png) no-repeat;
+width:174px;
+height:36px;
+}
+
+.challenge{
+background:url(../images/actionbuttons/button-challenge.png) no-repeat scroll 0 center;
+width:124px;
+height:52px;
+}
+
+.sendgift{
+background:url(../images/actionbuttons/button-sendgift.png) no-repeat scroll 0 center;
+width:136px;
+height:55px;
+}
+
+.male .edit{
+background-image:url(../images/actionbuttons/button-edit-m.png);
+height:14px;
+width:14px;
+}
+
+.female .edit{
+background-image:url(../images/actionbuttons/button-edit-f.png);
+float:left;
+height:14px;
+width:14px;
+}
+
+.edit-small{
+background:url(../images/actionbuttons/button-edit-small.png) no-repeat;
+height:12px;
+width:12px;
+}
+
+
+.delete-trans{
+background:url(../images/actionbuttons/button-delete-trans.png) no-repeat;
+width:21px;
+height:21px;
+}
+
+.confirm{
+background:url(../images/actionbuttons/button-confirm.png) no-repeat;
+width:91px;
+height:25px;
+}
+
+.addtalent{
+background:url(../images/actionbuttons/button-addtalent.png) no-repeat;
+width:61px;
+height:22px;
+}
+
+.equipitem{
+background:url(../images/actionbuttons/button-equipitem.png) no-repeat;
+width:50px;
+height:19px;
+}
+
+.cancelequip{
+background:url(../images/actionbuttons/button-cancelequip.png) no-repeat;
+width:50px;
+height:19px;
+}
+
+.manageentourage{
+background:url(../images/actionbuttons/button-manageentourage.png) no-repeat;
+width:209px;
+height:50px;
+}
+
+.createsong{
+background:url(../images/actionbuttons/button-createsong.png) no-repeat;
+width:209px;
+height:69px;
+}
+
+.randomtitle{
+background:url(../images/actionbuttons/button-getrandomtitle.png) no-repeat;
+width:110px;
+height:19px;
+}
+
+.savesong{
+background:url(../images/actionbuttons/button-savesong.png) no-repeat;
+width:70px;
+height:19px;
+}
+
+.cancelsong{
+background:url(../images/actionbuttons/button-cancelsong.png) no-repeat;
+width:43px;
+height:10px;
+}
+
+.recordsong{
+background:url(../images/actionbuttons/button-recordsong.png) no-repeat;
+width:91px;
+height:38px;
+}
+
+.addscalebar{
+background:url(../images/actionbuttons/button-addscalebar.png) no-repeat;
+width:186px;
+height:29px;
+}
+
+.editsongitem{
+background:url(../images/actionbuttons/button-editsongitem.png) no-repeat;
+width:21px;
+height:19px;
+}
+
+.callagent{
+background:url(../images/actionbuttons/button-callagent.png) no-repeat;
+width:141px;
+height:38px;
+}
+
+.checkoutgig{
+background:url(../images/actionbuttons/button-checkoutgig.png) no-repeat;
+width:154px;
+height:24px;
+}
+
+.callnow{
+background:url(../images/actionbuttons/button-callnow.png) no-repeat;
+width:66px;
+height:54px;
+}
+
+.facebook-thumbup{
+background:url(../images/facebook/thumbup.png) no-repeat;
+width:22px;
+height:22px;
+}
+
+.facebook-like{
+background:url(../images/facebook/like.png) no-repeat;
+width:39px;
+height:21px;
+}
+
+.editlogo, .recruitnow, .recruitnow2, .challenge, .sendgift, .male .edit, .female .edit, .delete-trans, 
+.edit-small, .confirm, .addtalent, .equipitem, .cancelequip, .manageentourage, .randomtitle, .savesong, 
+.cancelsong, .recordsong, .addscalebar, .editsongitem, .callagent, .checkoutgig, .callnow, .facebook-thumbup, .facebook-like{
+float:left;
+text-indent:3000px;
+white-space:nowrap;
+overflow:hidden;
+cursor:pointer;
+border:none;
+}
+
+.editlogo:hover, .recruitnow:hover, .recruitnow2:hover, .challenge:hover, .sendgift:hover, .male .edit:hover, 
+.female .edit:hover, .delete-trans:hover, .edit-small:hover, .confirm:hover, .addtalent:hover, .equipitem:hover, 
+.cancelequip:hover, .manageentourage:hover, .createsong:hover, .randomtitle:hover, .savesong:hover, .cancelsong:hover, 
+.recordsong:hover, .addscalebar:hover, .editsongitem:hover, .callagent:hover, .checkoutgig:hover, .callnow:hover{
+opacity:0.9;
+text-decoration:none;
+}
+
+/* ------- 2. Profile Activity ------- */
+
+#activity{
+background:#000;
+float:left;
+position:relative;
+z-index:9;
+margin:10px 0 0;
+}
+
+#activity .minitabs{
+width:100%;
+margin:0;
+}
+
+#activity .minitabs .tabcontents{
+padding:10px;
+}
+
+#activity .minitabs ul.tabs li a{
+font-size:10px;
+padding:6px 10px 8px;
+}
+
+#activity .activity-toggle{
+cursor:pointer;
+font-size:13px;
+margin:2px 0;
+float:right;
+}
+
+#activity.collapsed{
+width:175px;
+}
+
+#activity.expanded{
+width:400px;
+}
+
+#activity.collapsed .minitabs .tabcontents{
+width:155px;
+}
+
+#activity.expanded .minitabs .tabcontents{
+width:380px;
+}
+
+#activity.collapsed .activity-toggle.collapse{
+display:none;
+}
+
+#activity.collapsed .activity-toggle.expand{
+display:block;
+}
+
+#activity.expanded .activity-toggle.collapse{
+display:block;
+}
+
+#activity.expanded .activity-toggle.expand{
+display:none;
+}
+
+#postmessage{
+width:100%;
+float:left;
+}
+
+#postmessage textarea{
+margin:5px 0;
+}
+
+ul.activity{
+list-style:none;
+margin:0;
+padding:0;
+float:left;
+}
+
+ul.activity li{
+width:100%;
+float:left;
+margin:10px 0 0;
+}
+
+ul.activity li:first-child{
+margin:0;
+}
+
+ul.activity li dfn{
+background:url(../images/profile/bg-latest-date.png) no-repeat;
+width:76px;
+height:16px;
+float:left;
+color:#000;
+font-size:10px;
+font-weight:bold;
+padding:3px 0 0 8px;
+margin:0 8px 0 0;
+}
+
+ul.activity li .acts{
+width:auto;
+float:left;
+}
+
+ul.activity li p{
+margin:0;
+}
+
+/* ------- 3. Item Chooser ------- */
+
+.itemchooser{
+background:url(../images/profile/bg-itemchooser.png) no-repeat;
+width:351px;
+height:400px;
+float:left;
+display:none;
+}
+
+.itemchooser .itemname{
+float:left;
+font-size:14px;
+height:20px;
+padding:10px;
+vertical-align:middle;
+width:165px;
+}
+
+.itemchooser .stat{
+height:33px;
+padding:5px 0 0;
+font-size:10px;
+letter-spacing:-1px;
+text-transform:uppercase;
+float:left;
+text-align:center;
+}
+
+.itemchooser .star.stat{
+background:url(../images/profile/icon-starpower-small.png) no-repeat scroll center bottom;
+width:25px;
+}
+
+.itemchooser .cool.stat{
+background:url(../images/profile/icon-coolness-small.png) no-repeat scroll center bottom;
+width:35px;
+float:left;
+text-align:center;
+}
+
+.itemchooser .itemchooser-items{
+float:left;
+height:324px;
+overflow-y:scroll;
+padding:0 0 0 10px;
+width:317px;
+}
+
+.itemchooser .itemchooser-items ul{
+list-style:none;
+margin:0;
+padding:0;
+float:left;
+overflow:hidden;
+width:300px;
+}
+
+.itemchooser .itemchooser-items ul li{
+background:url(../images/profile/bg-itemchooser-li.png) repeat-x scroll 0 bottom;
+width:94%;
+float:left;
+padding:2px 10px;
+height:19px;
+}
+
+.itemchooser .itemchooser-items ul li.autoequip{
+background:#d0d4d7;
+width:94%;
+float:left;
+padding:2px 10px;
+height:19px;
+}
+
+.itemchooser .itemchooser-items ul li.autoequip a{
+color:#255976;
+}
+
+.itemchooser .itemchooser-items ul li.autoequip:hover a, .itemchooser .itemchooser-items ul li.choosen.autoequip a{
+color:#fff;
+}
+
+.itemchooser .itemchooser-items ul li:hover, .itemchooser .itemchooser-items ul li.choosen{
+background:url(../images/profile/bg-itemchooser-li2.png) repeat-x scroll 0 top;
+}
+
+.itemchooser .itemchooser-items ul li.choosen a.item, .itemchooser .itemchooser-items ul li.choosen a.equip{
+background:url(../images/profile/icon-check.png) no-repeat scroll right top;
+text-shadow:0 0 1px #000, 0 0 1px #000, 0 0 2px #000, 0 0 5px #000;
+}
+
+.itemchooser .itemchooser-items ul li:hover a.item, .itemchooser .itemchooser-items ul li:hover a.equip{
+text-shadow:0 0 1px #000, 0 0 1px #000, 0 0 2px #000, 0 0 5px #000;
+}
+
+.itemchooser .itemchooser-items ul li a{
+font-size:11px;
+text-decoration:none;
+}
+
+.itemchooser .itemchooser-items ul li a.item, .itemchooser .itemchooser-items ul li a.equip{
+width:165px;
+float:left;
+padding:0;
+margin:2px 0 0;
+}
+
+.itemchooser .itemchooser-items ul li a.star, .itemchooser .itemchooser-items ul li a.cool{
+font-size:10px;
+float:left;
+text-align:center;
+padding:2px 0 0;
+}
+
+.itemchooser .itemchooser-items ul li a.star{
+width:25px;
+}
+
+.itemchooser .itemchooser-items ul li a.cool{
+width:35px;
+}
+
+.itemchooser .itemchooser-items ul li .equipitem{
+float:right;
+}
+
+.itemchooser a.cancelequip{
+background:url(../images/modalclose-trans.png) repeat-x scroll 0 top;
+width:14px;
+height:13px;
+float:right;
+margin:8px 25px 0 0;
+}
+
+/* ------- 4. Modal Misc ------- */
+
+.itemmodal{
+width:415px;
+float:left;
+overflow:hidden;
+}
+
+.equip{
+cursor:pointer;
+}
+
+.itemmodal a.equip img{
+width:151px;
+height:197px;
+float:left;
+}
+
+.itemmodal .equip-status, .itemmodal .equip-owned{
+color:#FFFFFF;
+display:block;
+margin:0 0 0 160px;
+text-align:left;
+}
+
+.itemmodal .equip-mainholder{
+display:block;
+margin:-50px 0 0 0;
+}
+
+.itemmodal .equip-info{
+width:254px;
+float:left;
+margin:50px 0 0 10px;
+clear:right;
+}
+
+.itemmodal .equip-name{
+font-size:18px;
+font-weight:bold;
+display:block;
+padding:0 0 0 160px;
+clear:both;
+}
+
+.itemmodal .rarity0{
+color:#fff;
+}
+
+.itemmodal .equip-subname{
+color:#c4c4c4;
+font-size:12px;
+display:block;
+font-weight:bold;
+padding:0 0 0 160px;
+clear:both;
+}
+
+.itemmodal .equip-description, .itemmodal .equip-flavor{
+color:#c4c4c4;
+font-style:italic;
+margin:0;
+}
+
+.itemmodal .equip-details{
+color:#fff;
+
+}
+
+.itemmodal ul.equip-details{
+list-style:none;
+margin:8px 0;
+padding:0 0 0 20px;
+}
+
+.itemmodal ul.equip-details li{
+text-indent:-10px;
+margin:0 0 0 10px;
+}
+
+.itemmodal .equip-cost1{
+color:#6b9285;
+font-size:17px;
+font-weight:bold;
+}
+
+.itemmodal .equip-cost2{
+color:#fff;
+font-size:12px;
+}
+
+.itemmodal .equip-cost2 span{
+color:#18cb00;
+display:block;
+}
+
+.itemmodal .equip-action{
+float:left;
+height:20px;
+margin:10px 0 0 10px;
+}
+
+.itemmodal .equip-action select{
+margin:0 5px 0 0;
+height:18px;
+}
+
+.itemmodal .equip-action input{
+margin:0 2px 0 0;
+}
+
+.itemmodal .equip-action input.disabled{
+cursor:default;
+}
+
+.itemmodal .equip-action span{
+color:#a78b21;
+text-transform:uppercase;
+font-size:8px;
+margin:5px 10px 0 0;
+letter-spacing:0.5px;
+float:left;
+}
+
+.itemmodal .equip-action span span{
+letter-spacing:1px;
+float:none;
+margin:0;
+}
+
+.itemmodal .due{
+color:#D33805;
+float:right;
+font-weight:bold;
+margin:10px 0 0;
+width:244px;
+}
+
+.itemmodal .due .remaining, .itemmodal .due .timeleft{
+display:block;
+text-align:center;
+}
+
+#modal{
+color:#ccc;
+font-size:14px;
+}
+
+#modal .modalbutton{
+background:url(../images/actionbuttons/button-modal.png) repeat-x;
+float:left;
+padding:3px 8px;
+color:#fff;
+-moz-border-radius:8px;
+cursor:pointer;
+}
+
+#modal .modalbutton:hover{
+opacity:0.9;
+}
+
+#modal hr{
+background:url(../images/modal-hr.png) no-repeat scroll center center;
+width:100%;
+float:left;
+border:none;
+padding:0;
+margin:0;
+opacity:0.5;
+}
+
+#modal h1, #modal h2, #modal h3, #modal h4, #modal h5, #modal h6{
+color:#fff;
+}
+
+#modal .res-required{
+width:250px;
+height:auto;
+float:left;
+}
+
+#modal .res-required .needed{
+color:#ad0104;
+}
+
+#modal .res-required .current{
+color:#439e30;
+}
+
+#modal .res-required .modalbutton{
+margin:0 0 0 20px;
+}
+
+#modal .levelup{
+width:480px;
+float:left;
+}
+
+#modal .levelup .yourock{
+background:url(../images/yourock.png) no-repeat;
+float:left;
+width:195px;
+height:65px;
+padding:5px 0 0 285px
+}
+
+#modal .levelup .yourock h6{
+text-transform:uppercase;
+font-size:14px;
+margin:0 0 2px;
+}
+
+#modal .levelup .rewards{
+float:left;
+width:239px;
+margin:20px 0 0;
+padding:0 20px 0 0;
+border-right:1px dashed #787878;
+}
+
+#modal .levelup .rewards .modalbutton{
+float:right;
+}
+
+#modal .levelup .rewards h6{
+font-size:14px;
+}
+
+#modal .levelup .rewards ul{
+float:left;
+width:237px;
+border:1px solid #222;
+background:#191919;
+padding:0;
+margin:10px 0;
+list-style:none;
+}
+
+#modal .levelup .rewards ul li{
+float:left;
+padding:5px;
+margin:0 3px;
+width:222px;
+border-top:1px solid #313131;
+}
+
+#modal .levelup .rewards ul li:first-child{
+border:none;
+}
+
+#modal .levelup .share{
+width:200px;
+margin:20px 0 0;
+padding:0 0 0 20px;
+float:left;
+}
+
+#modal .levelup .share h5{
+font-weight:normal;
+margin:0 0 10px;
+line-height:20px;
+}
+
+
+/* ------- 5. Concert ------- */
+#concert{
+background:url(../images/challenge/concertbg1.jpg) no-repeat;
+width:532px;
+height:340px;
+float:left;
+padding:10px;
+position:relative;
+left:-8px;
+top:8px;
+}
+
+#concert .concertname{
+color:#f4ad00;
+font-size:18px;
+line-height:15px;
+}
+
+#concert .timeremain{
+color:#999;
+font-size:14px;
+font-weight:bold;
+float:right;
+}
+
+#concert .timeremain var{
+color:#fff;
+font-weight:bold;
+}
+
+#concert .concertbar{
+width:532px;
+float:left;
+margin:10px 0 0;
+}
+
+#concert .concertbar h6{
+text-transform:uppercase;
+color:#fff;
+font-weight:bold;
+font-size:12px;
+padding:0 0 0 8px;
+}
+
+#concert .concertbar .barholder{
+width:532px;
+height:10px;
+float:left;
+}
+
+#concert .concertbar .barholder .bar{
+background:url(../images/challenge/encore.png) repeat-x;
+height:10px;
+float:left;
+}
+
+#concert .concertbar.fading .barholder .bar{
+background:url(../images/challenge/fading.png) repeat-x;
+height:10px;
+float:left;
+}
+
+#concert .concertbar .barholder .arrow{
+background:url(../images/challenge/encore-arrow.png) no-repeat;
+width:12px;
+height:9px;
+float:left;
+}
+
+#concert .concertbar.fading .barholder .arrow{
+background:url(../images/challenge/fading-arrow.png) no-repeat;
+}
+
+#concert .concertbar .barholder .caption{
+font-weight:bold;
+font-size:10px;
+color:#000;
+text-transform:uppercase;
+float:left;
+margin:-2px 0 0 -55px;
+}
+
+#concert .concertbar.fading .barholder .caption{
+margin:-2px 0 0 -45px;
+}
+
+#concert .concertbar .barhilight{
+background:url(../images/challenge/barhilight.png) no-repeat;
+width:532px;
+height:10px;
+float:left;
+margin:-10px 0 0;
+}
+
+#concert .concertbar.fading .barhilight{
+background:url(../images/challenge/barhilight-fade.png) no-repeat;
+}
+
+#concertitems{
+background:url(../images/challenge/bg-concertitems.png) no-repeat scroll 0 bottom;
+width:552px;
+height:85px;
+float:left;
+position:relative;
+left:-8px;
+margin:-22px 0 0;
+}
+
+#concertitems .scrollable{
+width:473px;
+height:80px;
+float:left;
+position:relative; 
+overflow:hidden;
+left:39px;
+padding:5px 0 0;
+}
+
+#concertitems .items{
+width:20000em; 
+position:absolute; 
+}
+
+#concertitems .item{
+width:43px;
+height:56px;
+float:left;
+margin:0 5px;
+}
+
+#concertitems .item a{
+text-align:center;
+font-size:11px;
+font-weight:bold;
+display:block;
+text-decoration:underline;
+}
+
+#concertitems .item a:hover{
+text-decoration:none;
+}
+
+#concertitems .rightarrow{
+background:url(../images/challenge/rightarrow.png) no-repeat;
+width:14px;
+height:38px;
+float:left;
+text-indent:3000px;
+white-space:nowrap;
+overflow:hidden;
+position:absolute;
+top:15px;
+right:10px;
+cursor:pointer;
+}
+
+#concertitems .leftarrow{
+background:url(../images/challenge/leftarrow.png) no-repeat;
+width:14px;
+height:38px;
+float:left;
+text-indent:3000px;
+white-space:nowrap;
+overflow:hidden;
+position:absolute;
+top:15px;
+left:10px;
+cursor:pointer;
+}
+
+#challenge-main{
+background:url(../images/challenge/bg-challengecontent.png) no-repeat;
+width:552px;
+float:left;
+position:relative;
+left:-8px;
+padding:10px 0;
+}
+
+#challenge-left{
+width:311px;
+float:left;
+}
+
+#challenge-right{
+width:221px;
+float:left;
+margin:0 0 0 15px;
+}
+
+.bluetab{
+width:311px;
+float:left;
+}
+
+.bluetab .tabcontent{
+background:#061d2d;
+width:285px;
+padding:12px;
+float:left;
+border:1px solid #616163;
+-moz-border-radius:10px;
+-webkit-border-radius:10px;
+-moz-border-radius-topleft:0;
+-webkit-border-radius-topleft:0;
+}
+
+.bluetab .tabs{
+width:311px;
+float:left;
+position:relative;
+}
+
+.bluetab .tabs li{
+text-transform:none;
+float:left;
+}
+
+.bluetab .tabs li.active{
+background:#061d2d;
+border:1px solid #616163;
+border-bottom:none;
+-moz-border-radius-topright:10px;
+-moz-border-radius-topleft:10px;
+-webkit-border-radius-topright:10px;
+-webkit-border-radius-topleft:10px;
+}
+
+.bluetab .tabs li a{
+color:#71e8fe;
+font-size:12px;
+font-weight:bold;
+padding:5px 10px 6px;
+float:left;
+cursor:pointer;
+}
+
+.bluetab .tabs li.active a{
+color:#ccc;
+}
+
+.bluetab ul.activity  li{
+border-top:1px dashed #333;
+margin:10px 0 0;
+padding:10px 0 0;
+}
+
+.bluetab ul.activity  li:first-child{
+border:none;
+margin:0;
+padding:0;
+}
+
+.bluetab ul.activity  li dfn{
+background:none;
+color:#999;
+font-size:10px;
+width:100%;
+float:left;
+padding:0;
+margin:0;
+}
+
+.yellowbox{
+background:url(../images/challenge/bg-yellowbox.png) no-repeat;
+width:201px;
+height:195px;
+float:left;
+padding:10px;
+color:#000;
+}
+
+.yellowbox h6{
+font-weight:bold;
+font-size:18px;
+color:#fff;
+text-align:center;
+text-shadow:0 2px 3px #000;
+margin:-8px 0 5px;
+}
+
+.yellowbox  p{
+margin:5px 0 0;
+}
+
+.yellowbox .dark{
+font-weight:bold;
+}
+
+#callposse .megamosh{
+float:left;
+font-size:10px;
+color:#000;
+line-height:19px;
+margin:5px 0 0;
+letter-spacing:-0.5px;
+}
+
+#callposse .megamosh em{
+color:#00aac3;
+font-size:24px;
+font-weight:bold;
+display:block;
+font-style:normal;
+letter-spacing:-0.15px;
+}
+
+#callposse .callnow{
+float:right;
+margin:-10px 0 0;
+}
+
+#yourposse{
+width:100%;
+float:left;
+margin:10px 0 0;
+}
+
+#yourposse h6{
+color:#fff;
+}
+
+#yourposse .facebook-thumbup{
+margin:2px 0 0;
+}
+
+#yourposse .thumbup-caption{
+float:left;
+font-style:italic;
+width:189px;
+margin:0 0 0 10px;
+line-height:13px;
+}
+
+#yourposse .theposse{
+width:100%;
+float:left;
+list-style:none;
+margin:10px 0 0;
+padding:0;
+}
+
+#yourposse .theposse li{
+width:211px;
+float:left;
+padding:5px;
+}
+
+#yourposse .theposse li:nth-child(odd){
+background:#272727;
+}
+
+#yourposse .theposse .possethumb{
+background:#ccc;
+width:50px;
+height:50px;
+float:left;
+}
+
+#yourposse .theposse .posseinfo{
+float:left;
+width:151px;
+margin:0 0 0 10px;
+}
+
+#yourposse .theposse .possename{
+display:block;
+margin:0 0 5px;
+}
+
+#yourposse .posseinfo .thumbup-caption{
+width:119px;
+margin-top:5px;
+}
+
+
+/* Jimbo's Notes */
+.jimbosnotes{
+background-color:#560908;
+border:1px dashed #ddd;
+width:400px;
+float:left;
+padding:10px;
+margin:20px 0 0;
+}
+
+.jimbosnotes p{
+margin:10px 0 0;
+}
+
+.jimbosnotes p:first-child{
+margin:0;
+}
+
+.jibosnotes ul{
+margin-top:0;
+}
+
+.jimbosnotes ul li{
+margin:5px 0 0;
+}

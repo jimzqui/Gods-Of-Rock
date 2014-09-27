@@ -1,0 +1,83 @@
+body { background-color: #000000; color: #ffffff; }
+
+a:link {
+	color: cyan;
+}
+
+a:visited {
+	color: cyan;
+}
+
+a.Item_everyday:link {
+	color: white;
+	font-weight: bold;
+}
+a.Item_everyday:visited {
+	color: white;
+	font-weight: bold;
+}
+
+a.Item_common:link  {
+	color: lime;
+	font-weight: bold;
+}
+a.Item_common:visited  {
+	color: lime;
+	font-weight: bold;
+}
+
+a.Item_rare:link {
+	color: #0764b8;
+	font-weight: bold;
+}
+a.Item_rare:visited {
+	color: #0764b8;
+	font-weight: bold;
+}
+
+a.Item_epic:link {
+	color: #0066cc;
+	font-weight: bold;
+}
+a.Item_epic:visited {
+	color: #0066cc;
+	font-weight: bold;
+}
+
+a.Item_legendary:link {
+	color: #c6ad4e;
+	font-weight: bold;
+}
+a.Item_legendary:visited {
+	color: #c6ad4e;
+	font-weight: bold;
+}
+
+.ItemFlavor {
+	font-style: italic;
+}
+tr.odd {
+	background-color:#333333
+}
+tr.even {
+	background-color:#000000
+}
+
+/* Added by jcallina, should be pulled off into new file */
+.preview_image {
+    margin-top: 50px;
+}
+
+.story_nav_block {
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+
+#thorium_image_image_file {
+    color: #ffffff;
+}
+
+.content-filecontrol {
+    background-color: #000;
+}
+

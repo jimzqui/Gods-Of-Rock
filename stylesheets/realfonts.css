@@ -1,0 +1,28 @@
+/*
+ * The fonts used on this website are subject to the End User License Agreement
+ * entered into by the website owner. All other parties are explicitly restricted
+ * from using, in any manner, the Services, Licensed Fonts, or Licensed Content.
+ * Details about the EULA, and information about the fonts are listed below.
+ *
+ */
+
+@font-face{
+font-family: "farmers-market";
+src: url(../realfonts/FarmersMarketPW.otf);
+font-style: normal;
+font-weight: 500;
+}
+
+@font-face{
+font-family: "rockwell";
+src: url(../realfonts/ROCK.TTF);
+font-style: normal;
+font-weight: 500;
+}
+
+@font-face{
+font-family: "rockwell-bold";
+src: url(../realfonts/ROCKB.TTF);
+font-style: normal;
+font-weight: 900;
+}

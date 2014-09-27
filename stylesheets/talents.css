@@ -1,0 +1,372 @@
+/**
+ * Gods of Rock
+ * Copyright (c) 2010 Disruptor Beam LLC
+ * By Jimbo Quijano - jimzqui@yahoo.com
+ *
+ * talents.css
+ * Sets up the styles for the talents section.
+ *
+ * 01. GIGS SECTION
+ *	   1. Talent Points
+ *	   2. Talent Path
+ *	   3. Talents
+ *	   4. Elite Talents
+ *	   5. Reputation
+ */
+
+
+/* ----------------------------------------------------------------------------------------------------------------
+                                                  01. TALENTS SECTION
+---------------------------------------------------------------------------------------------------------------- */
+
+
+/* ------- 1. Talent Points ------- */
+
+#talentpoints{
+width:535px;
+float:left;
+padding:15px 0 0;
+}
+
+#talentpoints  .points{
+background:url(../images/talents/bg-unspent.png) no-repeat;
+width:225px;
+padding:20px 15px;
+float:left;
+}
+
+#talentpoints  a.confirm{
+margin:0 0 0 12px;
+}
+
+#talentpoints  a.reset{
+font-size:11px;
+margin:0 0 0 12px;
+padding:5px 0 0;
+float:left;
+text-decoration:underline;
+}
+
+#talentpoints  a.reset:hover{
+text-decoration:none;
+}
+
+.points .unspent{
+color:#888;
+text-transform:uppercase;
+float:left;
+padding:4px 0 0;
+}
+
+.points .unspent span{
+width:50px;
+float:left;
+font-size:10px;
+text-align:right;
+line-height:10px;
+margin:0 4px 0 0;
+}
+
+.points .unspent var{
+font-size:26px;
+line-height:18px;
+color:#fff;
+}
+
+#talentpoints  .reminder{
+width:265px;
+float:left;
+margin:0 0 0 15px;
+padding:15px 0 0;
+}
+
+#talentpoints  .reminder p{
+margin:0;
+}
+
+/* ------- 2. Talent Path ------- */
+
+#talentpath{
+width:565px;
+float:left;
+position:relative;
+left:-15px;
+margin:0 0 15px;
+}
+
+#talentpath .path{
+float:left;
+height:auto;
+}
+
+#talentpath .character1{
+background:url(../images/talents/bg-path1.png) no-repeat scroll right 20px;
+width:188px;
+}
+
+#talentpath .character2{
+background:url(../images/talents/bg-path2.png) no-repeat scroll center 20px;
+width:189px;
+}
+
+#talentpath .character3{
+background:url(../images/talents/bg-path3.png) no-repeat scroll left 20px;
+width:188px;
+}
+
+#talentpath .character1 cite{
+background:url(../images/talents/character/taylorswift.png) no-repeat scroll 50px center;
+}
+
+#talentpath .character2 cite{
+background:url(../images/talents/character/bobdylan.png) no-repeat scroll 50px center;
+}
+
+#talentpath .character3 cite{
+/*background:url(../images/talents/character/unknown.png) no-repeat scroll 50px center;*/
+}
+
+.path cite{
+width:100%;
+height:80px;
+padding:100px 0 0;
+float:left;
+color:#999;
+text-transform:uppercase;
+text-align:center;
+text-shadow:0 0 2px #000, 0 0 3px #000, 0 0 4px #000, 0 0 5px #000, 0 0 6px #000, 0 0 7px #000, 0 0 15px #000, 0 0 25px #000;
+font-size:11px;
+line-height:15px;
+}
+
+.path cite em{
+display:block;
+color:#eee;
+font-size:18px;
+font-style:normal;
+}
+
+/* ------- 3. Talents ------- */
+
+#talents{
+width:158px;
+padding:0 15px;
+float:left;
+position:relative;
+margin:-30px 0 0;
+}
+
+#talents .odd, #talents .even{
+width:100%;
+float:left;
+margin:0 0 25px;
+}
+
+#talents .odd .talent{
+float:left;
+}
+
+#talents .even .talent{
+float:right;
+}
+
+#talents .talent{
+width:61px;
+height:79px;
+position:relative;
+}
+
+.talent img{
+position:absolute;
+z-index:1;
+}
+
+.talent .addtalent{
+position:absolute;
+bottom:-19px;
+z-index:1;
+}
+
+.talent .connector{
+width:50px;
+height:54px;
+float:left;
+position:absolute;
+}
+
+.character1 .even .connector{
+background:url(../images/talents/char1-arrowright.png) no-repeat;
+top:-35px;
+left:-45px;
+}
+
+.character1 .odd .connector{
+background:url(../images/talents/char1-arrowleft.png) no-repeat;
+top:-30px;
+right:-45px;
+}
+
+.character2 .even .connector{
+background:url(../images/talents/char2-arrowright.png) no-repeat;
+top:-35px;
+left:-45px;
+}
+
+.character2 .odd .connector{
+background:url(../images/talents/char2-arrowleft.png) no-repeat;
+top:-30px;
+right:-45px;
+}
+
+.character3 .even .connector{
+background:url(../images/talents/char3-arrowright.png) no-repeat;
+top:-35px;
+left:-45px;
+}
+
+.character3 .odd .connector{
+background:url(../images/talents/char3-arrowleft.png) no-repeat;
+top:-30px;
+right:-45px;
+}
+
+#talentpath .even .locked .connector{
+background:url(../images/talents/locked-arrowright.png) no-repeat;
+top:-35px;
+left:-45px;
+}
+
+#talentpath .odd .locked .connector{
+background:url(../images/talents/locked-arrowleft.png) no-repeat;
+top:-30px;
+right:-45px;
+}
+
+.talent.locked img{
+opacity:0.3;
+}
+
+.talent.locked em{
+background:url(../images/talents/label-talentlocked.png) no-repeat;
+width:65px;
+height:67px;
+float:right;
+position:absolute;
+bottom:-4px;
+right:-4px;
+z-index:2;
+opacity:0.7;
+}
+
+/* ------- 4. Elite Talents ------- */
+
+#elitetalents{
+width:535px;
+float:left;
+margin:0 0 15px;
+}
+
+#elitetalents h6{
+text-transform:uppercase;
+font-size:15px;
+}
+
+#elitetalents .talent{
+background:url(../images/talents/bg-talent.png) no-repeat;
+width:62px;
+height:73px;
+float:left;
+margin:0 13.5px;
+position:relative;
+}
+
+#elitetalents p{
+margin:0;
+}
+
+#elitetalents .talent-block{
+background:url(../images/talents/bg-talent-block.png) no-repeat;
+width:100%;
+height:86px;
+float:left;
+padding:10px 0 0;
+}
+
+#elitetalents .talent img{
+position:absolute;
+bottom:0;
+right:0;
+}
+
+/* ------- 5. Reputation ------- */
+
+.reputation{
+width:235px;
+float:left;
+margin:15px 16px;
+}
+
+.reputation h6{
+text-transform:uppercase;
+font-size:15px;
+text-align:center;
+margin:0 0 5px;
+}
+
+.reputation .col{
+width:100%;
+float:left;
+}
+
+.reputation .chead{
+margin:0 0 5px;
+}
+
+.reputation .cbody{
+margin:0 0 10px;
+}
+
+.reputation .col .r1{
+width:90px;
+}
+
+.reputation .col .r2{
+width:25px;
+}
+
+.reputation .col .r3{
+width:100px;
+margin:0 0 0 20px;
+}
+
+.reputation .chead div{
+font-size:10px;
+float:left;
+}
+
+.reputation .cbody div{
+float:left;
+}
+
+.reputation .cbody .r1{
+color:#99e9ff;
+}
+
+.reputation .cbody .r2{
+text-align:center;
+font-size:13px;
+}
+
+.reputation .progressbar{
+width:96px;
+height:16px;
+float:left;
+padding:0 1px;
+border:1px solid #4d4d4d;
+}
+
+.reputation .progressbar .bar{
+background:url(../images/talents/progressbar.png) repeat-x;
+height:16px;
+float:left;
+}

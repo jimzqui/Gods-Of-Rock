@@ -1,0 +1,393 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link rel="stylesheet" href="stylesheets/main.css" type="text/css" />
+<link rel="stylesheet" href="stylesheets/multicheck.css" type="text/css" />
+<link rel="stylesheet" href="stylesheets/style.css" type="text/css" />
+<link rel="stylesheet" href="stylesheets/typography.css" type="text/css" />
+<link rel="stylesheet" href="stylesheets/home.css" type="text/css" />
+<link rel="stylesheet" href="stylesheets/gigs.css" type="text/css" />
+<link rel="stylesheet" href="stylesheets/equipments.css" type="text/css" />
+<link rel="stylesheet" href="stylesheets/songs.css" type="text/css" />
+<link rel="stylesheet" href="stylesheets/profile.css" type="text/css" />
+<link rel="stylesheet" href="stylesheets/talents.css" type="text/css" />
+<link rel="stylesheet" href="stylesheets/band.css" type="text/css" />
+<link href="images/favicon.ico" rel="shortcut icon"/>
+<script src="javascripts/jquery-1.3.2.min.js" language="javascript" type="text/javascript"></script>
+<script src="javascripts/jquery-ui-1.7.2.custom.min.js" language="javascript" type="text/javascript"></script>
+<script src="javascripts/jquery.tooltip.js" language="javascript" type="text/javascript"></script>
+<script src="javascripts/jquery.tools.min.js" language="javascript" type="text/javascript"></script>
+<script src="javascripts/jquery.spinner.js" language="javascript" type="text/javascript"></script>
+<script src="javascripts/jquery.pagination.js" language="javascript" type="text/javascript"></script>
+<script src="javascripts/jquery.loader.js" language="javascript" type="text/javascript"></script>
+<script src="javascripts/jquery.gor.js" language="javascript" type="text/javascript"></script>
+<script src="javascripts/misc.js" language="javascript" type="text/javascript"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="leftwrap">
+			<div id="logowrap">
+				<a href="#"><img border="0" id="logo" alt="Gods of Rock logo" src="images/blank.png" /></a>
+				<span id="level">LEVEL 37</span>
+			</div>
+			<div id="sidemenu">
+				<span id="stagename">[Stage Name]</span>
+				<div id="leftnav">
+					<ul>
+						<li>
+							<a href="home.html">Home</a>
+						</li>
+						<li>
+							<a href="#">Profile</a>
+						</li>
+						<li>
+							<a href="#">Gifts</a>
+						</li>
+						<li>
+							<a href="#">Songs</a>
+						</li>
+						<li>
+							<a href="#">Battle of the Bands</a>
+						</li>
+						<li>
+							<a href="#">Gigs</a>
+						</li>
+						<li>
+							<a href="#">Inventory</a>
+						</li>
+						<li>
+							<a href="#">Marketplace</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="rightwrap">
+			<div id="header">
+				<div id="statsmenu">
+					<ul>
+						<li><a class="energy">
+							<span class="statsname">ENERGY</span><span class="statsnum"><span id="energy_value">10</span>/10</span>
+							<span class="statsinfo"><span id="energy_ticker"></span>
+						</span></a></li>
+						<li><a class="inspiration">
+							<span class="statsname">INSPIRATION</span>
+							<span class="statsnum"><span id="inspiration_value">0</span>/0</span>
+							<span class="statsinfo"><span id="inspiration_ticker"></span>
+						</span></a></li>
+						<li><a class="funds">
+							<span class="statsname">FUNDS</span>
+							<span class="statsnum">$500</span>
+							<span class="statsinfo">+$0/day</span>
+						</a></li>
+						<li><a class="fans">
+							<span class="statsname">FANS</span>
+							<span class="statsnum">0</span>
+							<span class="statsinfo">+0/day</span>
+						</a></li>
+					</ul>
+				</div>
+				<div id="xpwrap">
+					<div id="xpbar">
+						<div class="progressbar tooltip" title="45% to Next Level">
+							<img class="progress" src="images/stats/progressbar.gif" alt="" style="width:45%" />
+							<span class="guitarfrets"></span>
+						</div>
+						<div class="xp">
+							<span class="xp-label">Experience</span>
+							<span class="experience">92,338,765 / 99,932,999</span>
+						</div>
+						<div id="buffbar">
+							<div class="buffitem first"></div>
+							<div class="buffitem"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="content" class="notab">
+				<div id="inner">
+					<div id="welcomemessage">
+						<p class="message"><span>Welcome Back [Stagename]</span>You gained <var class="funds">$75</var> and <var class="fans">23 fans</var> while you were away.</p>
+						<span class="underline-funds"></span>
+						<span class="underline-fans"></span>
+					</div>
+					<div id="slideshow">
+						<div class="scrollable">
+							<div class="slides">
+								<div class="slide">
+									<div class="info">
+										<h5>Slide 1</h5>
+										<p>You have unlocked 3 new entourage positions.<br/>
+										Put your friends to work advancing your career.</p>
+										<a class="manageentourage">Manage Entourage</a>
+									</div>
+									<img class="slideimg" src="images/home/slides/slide1.png" alt="" />
+								</div>
+								<div class="slide">
+									<div class="info">
+										<h5>Slide 2</h5>
+										<p>You have unlocked 3 new entourage positions.<br/>
+										Put your friends to work advancing your career.</p>
+										<a class="manageentourage">Manage Entourage</a>
+									</div>
+									<img class="slideimg" src="images/home/slides/slide1.png" alt="" />
+								</div>
+								<div class="slide">
+									<div class="info">
+										<h5>Slide 3</h5>
+										<p>You have unlocked 3 new entourage positions.<br/>
+										Put your friends to work advancing your career.</p>
+										<a class="manageentourage">Manage Entourage</a>
+									</div>
+									<img class="slideimg" src="images/home/slides/slide1.png" alt="" />
+								</div>
+								<div class="slide">
+									<div class="info">
+										<h5>Slide 4</h5>
+										<p>You have unlocked 3 new entourage positions.<br/>
+										Put your friends to work advancing your career.</p>
+										<a class="manageentourage">Manage Entourage</a>
+									</div>
+									<img class="slideimg" src="images/home/slides/slide1.png" alt="" />
+								</div>
+								<div class="slide">
+									<div class="info">
+										<h5>Slide 5</h5>
+										<p>You have unlocked 3 new entourage positions.<br/>
+										Put your friends to work advancing your career.</p>
+										<a class="manageentourage">Manage Entourage</a>
+									</div>
+									<img class="slideimg" src="images/home/slides/slide1.png" alt="" />
+								</div>
+							</div>
+						</div>
+						<div class="navigator">
+							<a class="prevslide"><img src="images/home/prevslide.png" alt="" /></a>
+							<div class="navi">
+								<a href="0" class="active">1</a>
+								<a href="1">2</a>
+								<a href="2">3</a>
+								<a href="3">4</a>
+								<a href="4">5</a>
+							</div>
+							<a class="nextslide"><img src="images/home/nextslide.png" alt="" /></a>
+						</div>
+					</div>
+					<div id="rockhistory">
+						<div class="date">
+							<span class="mmm">MAY</span>
+							<span class="dd">27</span>
+						</div>
+						<div class="history">
+							<h4>This Day in Rock</h4>
+							<p>R.E.M. plays their first show at a friend's birthday party in an Episcopalian church. Undoubtedly, they were dreaming about <q>All Tomorrow's Parties.</q></p>
+						</div>
+					</div>
+					<div class="jimbosnotes">
+						<p class="loud">Notes for Trivia Challenge:</p>
+						<p>Below is the interface of Trivia Challenge when the user hasnt choose any answer yet.</p>
+						<p>Looking at the partial codes, I can see this will go into
+						a FORM process. Since AJAX is complicated at the moment, I believe the page will just refresh.</p>
+						<p>The partial code has three radio buttons and theres a submit button to process the form. However on this layout, its kinda different. There are just simple buttons made from xhtml & css.</p>
+						<p>So what I did, I create a form with three radio buttons which I hide. I create a js code to connect the radio buttons with the simple buttons. Clicking the first simple button 
+						will select the first radio button and it will automatically submit the form.</p>
+					</div>
+					<div class="triviaquiz">
+						<h3>Wait, Wait, Not That</h3>
+						<span class="howto">PICK THE CORRECT ANSWER TO WIN A SPIN ON THE FABULOUS PRIZE WHEEL</span>
+						<span class="question">Dokken teamed up with Norton Anti-Virus in a series of ads where Dokken poses as a computer virus, trying to have its way with your computer as represented by a...</span>
+						<ul class="choices">
+							<li>
+								<a class="button"><span>1. Chicken</span></a>
+							</li>
+							<li>
+								<a class="button"><span>2. Helpless young woman</span></a>
+							</li>
+							<li>
+								<a class="button"><span>3. European sports car. Buttons need to expand for long lines</span></a>
+							</li>
+						</ul>
+						<form method="post" action="" class="triviaform">
+							<input type="radio" value="1" name="answer" id="answer_1">
+							<input type="radio" value="2" name="answer" id="answer_2">
+							<input type="radio" value="3" name="answer" id="answer_3">
+							<input type="hidden" value="" name="authenticity_token">
+						</form>
+					</div>
+					<div class="jimbosnotes">
+						<p class="loud">Notes for Trivia Challenge:</p>
+						<p>Below is the interface of Trivia Challenge when the user has choosen a wrong answer.</p>
+						<p>In this case, there are changes and additions in html. Here are the following:</p>
+						<ul>
+							<li>Put a class "wrong" in the parent div, making it:<br/> &lt;div class="triviaquiz wrong"&gt;.</li>
+							<li>Put a class "right-ans" to the button having the right answer, making it:<br/> &lt;a class="button right-ans"&gt;</li>
+							<li>Put a class "choosen-ans" to the button choice of the user, making it &lt;a class="button choosen-ans"&gt;</li>
+							<li>Put the code for the timer like the following:<br/> &lt;div class="triviatimer"&gt;<br/>New Chance in <br/>&lt;span&gt;24:15:23&lt;/span&gt;<br/>&lt;/div&gt;</li>
+						</ul>
+					</div>
+					<div class="triviaquiz wrong">
+						<h3>Sorry Not That!</h3>
+						<span class="howto">BETTER LUCK NEXT TIME.</span>
+						<span class="question">Dokken teamed up with Norton Anti-Virus in a series of ads where Dokken poses as a computer virus, trying to have its way with your computer as represented by a...</span>
+						<ul class="choices">
+							<li>
+								<a class="button right-ans"><span>1. Chicken</span></a>
+							</li>
+							<li>
+								<a class="button choosen-ans"><span>2. Helpless young woman</span></a>
+							</li>
+							<li>
+								<a class="button"><span>3. European sports car. Buttons need to expand for long lines</span></a>
+							</li>
+						</ul>
+						<div class="triviatimer">New Chance in <span>24:15:23</span></div>
+					</div>
+					<div class="jimbosnotes">
+						<p class="loud">Notes for Trivia Challenge:</p>
+						<p>Below is the interface of Trivia Challenge when the user has choosen the correct answer.</p>
+						<p>In this case, there are changes in html. Here are the following:</p>
+						<ul>
+							<li>Put a class "correct" in the parent div, making it:<br/> &lt;div class="triviaquiz correct"&gt;.</li>
+							<li>Put a class "right-ans" to the button having the right answer, making it:<br/> &lt;a class="button right-ans"&gt;</li>
+							<li>Put a class "choosen-ans" to the button choice of the user, making it &lt;a class="button right-ans choosen-ans"&gt;</li>
+						</ul>
+						<p>The interface for the reward is hidden at the bottom part. Clicking the wheel will display the spinning wheel animation. Clicking the spinning 
+						wheel will display the trivia reward.</p>
+					</div>
+					<div class="triviaquiz correct">
+						<h3>Correct, Yes That!</h3>
+						<span class="howto">NOW SPIN THE WHEEL TO SEE WHAT YOU HAVE WON.</span>
+						<span class="question">Dokken teamed up with Norton Anti-Virus in a series of ads where Dokken poses as a computer virus, trying to have its way with your computer as represented by a...</span>
+						<ul class="choices">
+							<li>
+								<a class="button choosen-ans right-ans"><span>1. Chicken</span></a>
+							</li>
+							<li>
+								<a class="button"><span>2. Helpless young woman</span></a>
+							</li>
+							<li>
+								<a class="button"><span>3. European sports car. Buttons need to expand for long lines</span></a>
+							</li>
+						</ul>
+						<div class="triviareward" style="display:none">
+							<img class="rewardimage" src="images/home/triviareward/bronze.png" alt="" />
+							<div class="rewardinfo">
+								<h3>Congratulations</h3>
+								<p>You have been awarded the bronze medallion. Win again on a consequetive day to earn the silver. You’ve also been credited with:</p>
+								<div class="thereward">
+									<img src="images/stats/inspiration-icon.png" alt="" />
+									<div class="threwardinfo">
+										<var class="inspiration">+50 Insiration</var>
+										<a class="button"><span>Share Bonus with Friends</span></a>
+										<p class="playagain">You may play again in 21 hours</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="opportunity collapse">
+						<h3>Special Opportunities</h3>
+						<div class="oppmessage machinemessage">
+							<h6>Answering Service says:</h6>
+							<q>Your agent has been calling all day. Better call back pronto.</q>
+							<div class="agent">
+								<img src="images/home/agentpic1.png" alt="" />
+								<a class="callagent">Call Agent</a>
+							</div>
+						</div>
+						<div class="oppmessage">
+							<h6>Answering Service says:</h6>
+							<q>WimpLo’s Ninja Dancer Recording Studios wants you to <a href="#">[Gig Name (might be long]</a>.</q>
+							<div class="oppextras">
+								<div class="rewardscost">
+									<h6>Reward</h6>
+									<var class="funds">+$998 - $1,827</var>
+									<var class="experience">+1259 XP</var>
+									<var class="inspiration">+25 Inspiration</var>
+									<var class="fans">+87 Fans</var>
+									<a class="rarity2" href="#">Chance for Drum Set</a>
+									<a href="#">and more</a>
+								</div>
+								<a class="checkoutgig">Check Out Gig</a>
+								<div class="rewardscost">
+									<h6>Costs</h6>
+									<var class="energy">-14 energy</var>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="minitabs">
+						<span class="tabtitle">Recent Activity ></span>
+						<ul class="tabs">
+							<li class="tab1 active"><a>All</a></li>
+							<li class="tab2"><a>Social</a></li>
+							<li class="tab3"><a>System</a></li>
+						</ul>
+						<div class="tabcontents">
+							<div class="tabcontent1">
+								<ul class="activity">
+									<li>
+										<dfn>Today</dfn>
+										<div class="acts">
+											<p>You reached Level 5</p>
+											<p>You challenged WimpLo <em>(you won)</em></p>
+											<p>You bought the <a class="equip rarity1">Big Hair</a></p>
+										</div>
+									</li>
+									<li>
+										<dfn>Yesterday</dfn>
+										<div class="acts">
+											<p>You reached Level 4</p>
+											<p>You challenged Jimbo <em>(you lost)</em></p>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="tabcontent2">
+								<ul class="activity">
+									<li>
+										<dfn>3 Days Ago</dfn>
+										<div class="acts">
+											<p>You reached Level 3</p>
+											<p>You won the <a class="equip rarity4">Clown Hat</a></p>
+										</div>
+									</li>
+									<li>
+										<dfn>1 Week Ago</dfn>
+										<div class="acts">
+											<p>You reached Level 2</p>
+											<p>You challenged WimpLo <em>(you won)</em></p>
+											<p>You bought the <a class="equip rarity3">Scarf</a></p>
+										</div>
+									</li>
+									<li>
+										<dfn>2 Weeks Ago</dfn>
+										<div class="acts">
+											<p>You reached Level 2</p>
+											<p>You bought the <a class="equip rarity2">Rare Ring</a></p>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="tabcontent3">
+								<ul class="activity">
+									<li>
+										<dfn>2 Weeks Ago</dfn>
+										<div class="acts">
+											<p>You reached Level 2</p>
+											<p>You bought the <a class="equip rarity2">Rare Ring</a></p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</body>
+</html>

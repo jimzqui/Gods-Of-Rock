@@ -1,0 +1,329 @@
+/**
+ * Gods of Rock
+ * Copyright (c) 2010 Disruptor Beam LLC
+ * By Jimbo Quijano - jimzqui@yahoo.com
+ *
+ * equipment.css
+ * Sets up the styles for the equipment section.
+ * 
+ * 01. EQUIPMENTS SECTION
+ * 	   1. Featured Equipment
+ * 	   2. Regular Equipment
+ *     3. Equipment Rarity
+ */
+
+
+/* ----------------------------------------------------------------------------------------------------------------
+                                                  01. EQUIPMENTS SECTION
+---------------------------------------------------------------------------------------------------------------- */
+
+
+/* -------------------- 1. Featured Equipment -------------------- */
+
+.featured{
+width:535px;
+height:auto;
+display:block;
+padding:15px 0 20px 0;
+}
+
+.featured img{
+width:151px;
+height:197px;
+float:left;
+}
+
+.featured .equip-status, .featured .equip-owned{
+display:block;
+text-align:right;
+color:#fff;
+}
+
+.featured .equip-status{
+font-weight:bold;
+font-size:14px;
+}
+
+.featured .equip-owned{
+font-size:13px;
+}
+
+.featured .equip-mainholder{
+display:block;
+margin:-50px 0 0 0;
+}
+
+.featured .equip-info{
+width:364px;
+float:left;
+margin:50px 0 0 20px;
+}
+
+.featured .equip-name{
+font-size:18px;
+font-weight:bold;
+display:block;
+padding:0 0 0 170px;
+}
+
+.featured .equip-subname{
+color:#c4c4c4;
+font-size:12px;
+display:block;
+font-weight:bold;
+padding:0 0 0 170px;
+}
+
+.featured .equip-description{
+color:#c4c4c4;
+font-style:italic;
+margin:0;
+}
+
+.featured .equip-details{
+color:#fff;
+
+}
+
+.featured ul.equip-details{
+list-style:none;
+margin:8px 0;
+padding:0 0 0 20px;
+}
+
+.featured ul.equip-details li{
+text-indent:-10px;
+margin:0 0 0 10px;
+}
+
+.featured .equip-cost1{
+color:#6b9285;
+font-size:17px;
+font-weight:bold;
+}
+
+.featured .equip-cost2{
+color:#fff;
+font-size:12px;
+}
+
+.featured .equip-cost2 span{
+color:#18cb00;
+display:block;
+}
+
+.featured .equip-action{
+width:364px;
+float:right;
+height:20px;
+text-align:right;
+margin:-20px 0 0 0;
+}
+
+.equip-action select{
+margin:0 5px 0 0;
+height:18px;
+}
+
+.equip-action input{
+margin:0 2px 0 0;
+}
+
+.featured .equip-action span{
+color:#a78b21;
+text-transform:uppercase;
+font-size:8px;
+margin:5px 0 0 0;
+letter-spacing:0.5px;
+float:left;
+}
+
+.featured .equip-action span span{
+letter-spacing:1px;
+float:none;
+margin:0;
+}
+
+.featured .due{
+color:#D33805;
+float:right;
+font-weight:bold;
+margin:10px 0 0;
+width:364px;
+display:none;
+}
+
+.featured .due .remaining, .featured .due .timeleft{
+display:block;
+text-align:center;
+}
+
+/* -------------------- 2. Regular Equipment -------------------- */
+
+.regular{
+background:url(../images/regularequip-bg.png) repeat-x;
+width:230px;
+height:auto;
+float:left;
+padding:10px 15px;
+margin:0 3px 20px;
+position:relative;
+}
+
+.regular img{
+width:60px;
+height:79px;
+float:left;
+}
+
+.regular .equip-status, .regular .equip-owned{
+font-size:12px;
+font-weight:bold;
+color:#fff;
+}
+
+.regular .equip-status{
+display:block;
+}
+
+.regular .equip-owned{
+position:absolute;
+right:10px;
+top:10px;
+}
+
+.regular .equip-mainholder{
+clear:both;
+display:block;
+margin:10px 0 0 0;
+}
+
+.regular .equip-info{
+width:160px;
+float:left;
+margin:0 0 0 10px;
+}
+
+.regular .equip-name{
+font-weight:bold;
+display:block;
+line-height:16px;
+width:175px;
+}
+
+.regular .equip-subname{
+color:#c4c4c4;
+font-size:12px;
+display:none;
+clear:both;
+}
+
+.regular .equip-description{
+color:#c4c4c4;
+font-style:italic;
+margin:0;
+font-size:11px;
+display:none;
+}
+
+.regular .equip-details{
+color:#c4c4c4;
+
+}
+
+.regular ul.equip-details{
+list-style:none;
+margin:3px 0 8px 0;
+padding:0;
+font-size:11px;
+}
+
+.regular ul.equip-details li{
+text-indent:-7px;
+margin:0 0 0 7px;
+}
+
+.regular .equip-cost1{
+color:#6b9285;
+font-size:14px;
+font-weight:bold;
+}
+
+.regular .equip-cost2{
+color:#fff;
+font-size:11px;
+}
+
+.regular .equip-cost2 span{
+color:#18cb00;
+display:block;
+font-size:12px;
+font-weight:bold;
+}
+
+.regular .equip-action{
+width:230px;
+float:right;
+height:20px;
+text-align:center;
+margin:10px 0 0 0;
+}
+
+.regular .equip-action span{
+color:#a78b21;
+text-transform:uppercase;
+font-size:8px;
+margin:5px 10px 0 0;
+letter-spacing:0.5px;
+float:left;
+display:none;
+}
+
+.regular .equip-action span span{
+letter-spacing:1px;
+display:none;
+}
+
+.regular .due{
+color:#D33805;
+float:right;
+font-size:11px;
+margin:10px 0 0;
+width:230px;
+display:none;
+}
+
+.regular .due .remaining, .regular .due .timeleft{
+display:block;
+text-align:center;
+}
+
+/* -------------------- 3. Equipment Rarity -------------------- */
+
+.rarity0{
+color:#fff;
+}
+
+.rarity1{
+color:lime;
+}
+
+.rarity2{
+color:#0764b8;
+}
+
+.rarity3{
+color:#7828c1;
+}
+
+.rarity4{
+color:#c6ad4e;
+}
+
+.rarity5{
+color:#999;
+}
+
+.rarity6{
+color:#019b52;
+}

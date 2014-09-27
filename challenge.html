@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link rel="stylesheet" href="stylesheets/main.css" type="text/css" />
+<link rel="stylesheet" href="stylesheets/multicheck.css" type="text/css" />
+<link rel="stylesheet" href="stylesheets/style.css" type="text/css" />
+<link rel="stylesheet" href="stylesheets/typography.css" type="text/css" />
+<link rel="stylesheet" href="stylesheets/home.css" type="text/css" />
+<link rel="stylesheet" href="stylesheets/gigs.css" type="text/css" />
+<link rel="stylesheet" href="stylesheets/equipments.css" type="text/css" />
+<link rel="stylesheet" href="stylesheets/songs.css" type="text/css" />
+<link rel="stylesheet" href="stylesheets/profile.css" type="text/css" />
+<link rel="stylesheet" href="stylesheets/talents.css" type="text/css" />
+<link rel="stylesheet" href="stylesheets/band.css" type="text/css" />
+<link href="images/favicon.ico" rel="shortcut icon"/>
+<script src="javascripts/jquery-1.3.2.min.js" language="javascript" type="text/javascript"></script>
+<script src="javascripts/jquery-ui-1.7.2.custom.min.js" language="javascript" type="text/javascript"></script>
+<script src="javascripts/jquery.tooltip.js" language="javascript" type="text/javascript"></script>
+<script src="javascripts/jquery.tools.min.js" language="javascript" type="text/javascript"></script>
+<script src="javascripts/jquery.spinner.js" language="javascript" type="text/javascript"></script>
+<script src="javascripts/jquery.pagination.js" language="javascript" type="text/javascript"></script>
+<script src="javascripts/jquery.loader.js" language="javascript" type="text/javascript"></script>
+<script src="javascripts/jquery.gor.js" language="javascript" type="text/javascript"></script>
+<script src="javascripts/misc.js" language="javascript" type="text/javascript"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="leftwrap">
+			<div id="logowrap">
+				<a href="#"><img border="0" id="logo" alt="Gods of Rock logo" src="images/blank.png" /></a>
+				<span id="level">LEVEL 37</span>
+			</div>
+			<div id="sidemenu">
+				<span id="stagename">[Stage Name]</span>
+				<div id="leftnav">
+					<ul>
+						<li>
+							<a href="home.html">Home</a>
+						</li>
+						<li>
+							<a href="#">Profile</a>
+						</li>
+						<li>
+							<a href="#">Gifts</a>
+						</li>
+						<li>
+							<a href="#">Songs</a>
+						</li>
+						<li>
+							<a href="#">Battle of the Bands</a>
+						</li>
+						<li>
+							<a href="#">Gigs</a>
+						</li>
+						<li>
+							<a href="#">Inventory</a>
+						</li>
+						<li>
+							<a href="#">Marketplace</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="rightwrap">
+			<div id="header">
+				<div id="statsmenu">
+					<ul>
+						<li><a class="energy">
+							<span class="statsname">ENERGY</span><span class="statsnum"><span id="energy_value">10</span>/10</span>
+							<span class="statsinfo"><span id="energy_ticker"></span>
+						</span></a></li>
+						<li><a class="inspiration">
+							<span class="statsname">INSPIRATION</span>
+							<span class="statsnum"><span id="inspiration_value">0</span>/0</span>
+							<span class="statsinfo"><span id="inspiration_ticker"></span>
+						</span></a></li>
+						<li><a class="funds">
+							<span class="statsname">FUNDS</span>
+							<span class="statsnum">$500</span>
+							<span class="statsinfo">+$0/day</span>
+						</a></li>
+						<li><a class="fans">
+							<span class="statsname">FANS</span>
+							<span class="statsnum">0</span>
+							<span class="statsinfo">+0/day</span>
+						</a></li>
+					</ul>
+				</div>
+				<div id="xpwrap">
+					<div id="xpbar">
+						<div class="progressbar tooltip" title="45% to Next Level">
+							<img class="progress" src="images/stats/progressbar.gif" alt="" style="width:45%" />
+							<span class="guitarfrets"></span>
+						</div>
+						<div class="xp">
+							<span class="xp-label">Experience</span>
+							<span class="experience">92,338,765 / 99,932,999</span>
+						</div>
+						<div id="buffbar">
+							<div class="buffitem first"></div>
+							<div class="buffitem"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="maintabs">
+				<ul class="tabs">
+					<li class="active"><a href="#">Epic Concerts</a></li>
+				</ul>
+			</div>
+			<div class="clearfix"></div>
+			<div id="content">
+				<div id="inner">
+					<div id="concert">
+						<span class="concertname">[Concert Name]</span>
+						<span class="timeremain">Time Remaining: <var>25:34:42</var></span>
+						<div class="concertbar">
+							<h6>Applause</h6>
+							<div class="barholder">
+								<span class="bar" style="width:80%"></span>
+								<span class="caption">Encore</span>
+								<span class="arrow"></span>
+							</div>
+							<div class="barhilight"></div>
+						</div>
+						<div class="concertbar fading">
+							<h6>Stamina</h6>
+							<div class="barholder">
+								<span class="bar" style="width:20%"></span>
+								<span class="caption">Fading</span>
+								<span class="arrow"></span>
+							</div>
+							<div class="barhilight"></div>
+						</div>
+					</div>
+					<div id="concertitems">
+						<div class="scrollable">
+							<div class="items">
+								<div class="item">
+									<img class="tooltip" src="images/challenge/items/43x56/item1.png" alt="" />
+									<a href="#" class="rarity4">Use</a>
+								</div>
+								<div class="item">
+									<img class="tooltip" src="images/challenge/items/43x56/item2.png" alt="" />
+									<a href="#" class="rarity4">Use</a>
+								</div>
+								<div class="item">
+									<img class="tooltip" src="images/challenge/items/43x56/item3.png" alt="" />
+									<a href="#" class="rarity5">Use</a>
+								</div>
+								<div class="item">
+									<img class="tooltip" src="images/challenge/items/43x56/item4.png" alt="" />
+									<a href="#" class="rarity0">Use</a>
+								</div>
+								<div class="item">
+									<img class="tooltip" src="images/challenge/items/43x56/item5.png" alt="" />
+									<a href="#" class="rarity5">Use</a>
+								</div>
+								<div class="item">
+									<img class="tooltip" src="images/challenge/items/43x56/item6.png" alt="" />
+									<a href="#" class="rarity6">Use</a>
+								</div>
+								<div class="item">
+									<img class="tooltip" src="images/challenge/items/43x56/item7.png" alt="" />
+									<a href="#" class="rarity0">Use</a>
+								</div>
+								<div class="item">
+									<img class="tooltip" src="images/challenge/items/43x56/item8.png" alt="" />
+									<a href="#" class="rarity6">Use</a>
+								</div>
+								<div class="item">
+									<img class="tooltip" src="images/challenge/items/43x56/item9.png" alt="" />
+									<a href="#" class="rarity6">Use</a>
+								</div>
+								<div class="item">
+									<img class="tooltip" src="images/challenge/items/43x56/item1.png" alt="" />
+									<a href="#" class="rarity4">Use</a>
+								</div>
+								<div class="item">
+									<img class="tooltip" src="images/challenge/items/43x56/item2.png" alt="" />
+									<a href="#" class="rarity4">Use</a>
+								</div>
+								<div class="item">
+									<img class="tooltip" src="images/challenge/items/43x56/item3.png" alt="" />
+									<a href="#" class="rarity5">Use</a>
+								</div>
+								<div class="item">
+									<img class="tooltip" src="images/challenge/items/43x56/item4.png" alt="" />
+									<a href="#" class="rarity0">Use</a>
+								</div>
+								<div class="item">
+									<img class="tooltip" src="images/challenge/items/43x56/item5.png" alt="" />
+									<a href="#" class="rarity5">Use</a>
+								</div>
+								<div class="item">
+									<img class="tooltip" src="images/challenge/items/43x56/item6.png" alt="" />
+									<a href="#" class="rarity6">Use</a>
+								</div>
+								<div class="item">
+									<img class="tooltip" src="images/challenge/items/43x56/item7.png" alt="" />
+									<a href="#" class="rarity0">Use</a>
+								</div>
+								<div class="item">
+									<img class="tooltip" src="images/challenge/items/43x56/item8.png" alt="" />
+									<a href="#" class="rarity6">Use</a>
+								</div>
+								<div class="item">
+									<img class="tooltip" src="images/challenge/items/43x56/item9.png" alt="" />
+									<a href="#" class="rarity6">Use</a>
+								</div>
+							</div>
+						</div>
+						<a class="leftarrow">Previous</a>
+						<a class="rightarrow">Next</a>
+					</div>
+					<div id="challenge-main">
+						<div id="challenge-left">
+							<div class="bluetab">
+								<ul class="tabs">
+									<li class="active"><a>Concert Updates</a></li>
+									<li><a>Chat</a></li>
+								</ul>
+								<div class="tabcontent">
+									<ul class="activity">
+										<li><dfn>Mar 10, 2010</dfn> <p>He challenged you <em>(you won)</em></p></li>
+										<li><dfn>Mar 10, 2010</dfn> <p>He gave you a really cool guitar</p></li>
+										<li><dfn>Mar 10, 2010</dfn> <p>You challenged him <em>(you lost)</em></p></li>
+										<li><dfn>Mar 10, 2010</dfn> <p>He challenged you <em>(you won)</em></p></li>
+										<li><dfn>Mar 10, 2010</dfn> <p>He gave you a really cool guitar</p></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div id="challenge-right">
+							<div class="yellowbox" id="callposse">
+								<h6>Call in Your Posse</h6>
+								<img src="images/challenge/yellowboximg1.png" alt="" />
+								<p>Invite friends and bands to trigger an epic performance event</p>
+								<p class="dark">Need 8 more posse promoters to kick-off:</p>
+								<span class="megamosh"><em>Mega Mosh</em> +25% to performance moves</span>
+								<a class="callnow">Call Now</a>
+							</div>
+							<div id="yourposse">
+								<h6>Your Posse</h6>
+								<a class="facebook-thumbup">Thumb up</a>
+								<span class="thumbup-caption">Show your posse that you appreciate their support by liking them on facebook.</span>
+								<ul class="theposse">
+									<li>
+										<span class="possethumb"><img src="" alt="" /></span>
+										<div class="posseinfo">
+											<span class="possename">Mark Superstar</span>
+											<a class="facebook-thumbup">Thumb up</a>
+											<span class="thumbup-caption">Thank you!</span>
+										</div>
+									</li>
+									<li>
+										<span class="possethumb"><img src="" alt="" /></span>
+										<div class="posseinfo">
+											<span class="possename">Yves Roller</span>
+											<a class="facebook-like">Like</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</body>
+</html>

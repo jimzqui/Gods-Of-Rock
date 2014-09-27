@@ -1,0 +1,436 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link rel="stylesheet" href="stylesheets/main.css" type="text/css" />
+<link rel="stylesheet" href="stylesheets/multicheck.css" type="text/css" />
+<link rel="stylesheet" href="stylesheets/style.css" type="text/css" />
+<link rel="stylesheet" href="stylesheets/typography.css" type="text/css" />
+<link rel="stylesheet" href="stylesheets/home.css" type="text/css" />
+<link rel="stylesheet" href="stylesheets/gigs.css" type="text/css" />
+<link rel="stylesheet" href="stylesheets/equipments.css" type="text/css" />
+<link rel="stylesheet" href="stylesheets/songs.css" type="text/css" />
+<link rel="stylesheet" href="stylesheets/profile.css" type="text/css" />
+<link rel="stylesheet" href="stylesheets/talents.css" type="text/css" />
+<link rel="stylesheet" href="stylesheets/band.css" type="text/css" />
+<link href="images/favicon.ico" rel="shortcut icon"/>
+<script src="javascripts/jquery-1.3.2.min.js" language="javascript" type="text/javascript"></script>
+<script src="javascripts/jquery-ui-1.7.2.custom.min.js" language="javascript" type="text/javascript"></script>
+<script src="javascripts/jquery.tooltip.js" language="javascript" type="text/javascript"></script>
+<script src="javascripts/jquery.tools.min.js" language="javascript" type="text/javascript"></script>
+<script src="javascripts/jquery.spinner.js" language="javascript" type="text/javascript"></script>
+<script src="javascripts/jquery.pagination.js" language="javascript" type="text/javascript"></script>
+<script src="javascripts/jquery.loader.js" language="javascript" type="text/javascript"></script>
+<script src="javascripts/jquery.gor.js" language="javascript" type="text/javascript"></script>
+<script src="javascripts/misc.js" language="javascript" type="text/javascript"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="leftwrap">
+			<div id="logowrap">
+				<a href="#"><img border="0" id="logo" alt="Gods of Rock logo" src="images/blank.png" /></a>
+				<span id="level">LEVEL 37</span>
+			</div>
+			<div id="sidemenu">
+				<span id="stagename">[Stage Name]</span>
+				<div id="leftnav">
+					<ul>
+						<li>
+							<a href="#">Home</a>
+						</li>
+						<li>
+							<a href="#">Profile</a>
+						</li>
+						<li>
+							<a href="#">Gifts</a>
+						</li>
+						<li>
+							<a href="#">Songs</a>
+						</li>
+						<li>
+							<a href="#">Battle of the Bands</a>
+						</li>
+						<li>
+							<a href="#">Gigs</a>
+						</li>
+						<li>
+							<a href="#">Inventory</a>
+						</li>
+						<li>
+							<a href="#">Marketplace</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="rightwrap">
+			<div id="header">
+				<div id="statsmenu">
+					<ul>
+						<li><a class="energy">
+							<span class="statsname">ENERGY</span><span class="statsnum"><span id="energy_value">10</span>/10</span>
+							<span class="statsinfo"><span id="energy_ticker"></span>
+						</span></a></li>
+						<li><a class="inspiration">
+							<span class="statsname">INSPIRATION</span>
+							<span class="statsnum"><span id="inspiration_value">0</span>/0</span>
+							<span class="statsinfo"><span id="inspiration_ticker"></span>
+						</span></a></li>
+						<li><a class="funds">
+							<span class="statsname">FUNDS</span>
+							<span class="statsnum">$500</span>
+							<span class="statsinfo">+$0/day</span>
+						</a></li>
+						<li><a class="fans">
+							<span class="statsname">FANS</span>
+							<span class="statsnum">0</span>
+							<span class="statsinfo">+0/day</span>
+						</a></li>
+					</ul>
+				</div>
+				<div id="xpwrap">
+					<div id="xpbar">
+						<div class="progressbar tooltip" title="45% to Next Level">
+							<img class="progress" src="images/stats/progressbar.gif" alt="" style="width:45%" />
+							<span class="guitarfrets"></span>
+						</div>
+						<div class="xp">
+							<span class="xp-label">Experience</span>
+							<span class="experience">92,338,765 / 99,932,999</span>
+						</div>
+						<div id="buffbar">
+							<div class="buffitem first"></div>
+							<div class="buffitem"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="maintabs">
+				<ul class="tabs">
+					<li class="active"><a href="#">Tab 1</a></li>
+					<li><a href="#">Tab 2</a></li>
+					<li><a href="#">Tab 3</a></li>
+				</ul>
+			</div>
+			<div class="clearfix"></div>
+			<div id="content">
+				<div id="inner">
+					<div id="mainprofile">
+						<img class="profilethumb" src="images/profile/profilethumb.jpg" alt="" />
+						<div class="bandlogo">
+							<h1><img src="images/profile/bandlogo.png" alt="The Flappers" /></h1>
+							<a class="editlogo" href="#">Edit Logo</a>
+						</div>
+						<div class="clearfix"></div>
+						<div class="profileinfo">
+							<ul class="info">
+								<li><cite class="name">Larry Azevedo <span>(Wimp Lo)</span></cite></li>
+								<li><dfn>Signed to:</dfn> Record Label</li>
+								<li><dfn>Distributed by:</dfn> Guild Name</li>
+								<li><dfn>Wishlist:</dfn> <a href="#">5 items</a></li>
+								<li><dfn>Fans:</dfn> 1,638,103</li>
+								<li><dfn>Top Influences:</dfn> Jazz, Metal, Rock, Punk, Hip Hop, Alternative</li>
+							</ul>
+							<ul class="stats">
+								<li>
+									<div class="level">
+										<span class="statname">Level <var>12</var></span>
+									</div>
+								</li>
+								<li>
+									<div class="starpower">
+										<span class="statname">Starpower <var>34</var></span>
+									</div>
+								</li>
+								<li>
+									<div class="coolness">
+										<span class="statname">Coolness <var>45</var></span>
+									</div>
+								</li>
+							</ul>
+							<div id="systemboard">
+								<!--
+								<div class="expandentourage">
+									<h3 class="textimage">Expand Your Entourage</h3>
+									<a class="recruitnow2" href="#">Recruit Now</a>
+								</div>
+								-->
+								<div class="action">
+									<a href="#" class="challenge">Challenge</a>
+									<a href="#" class="sendgift">Send Gift</a>
+								</div>
+								<div class="latest">
+									<h6 class="ext-loud">Latest Interactions</h6>
+									<ul class="activity">
+										<li><dfn>Mar 10, 2010</dfn> <p>He challenged you <em>(you won)</em></p></li>
+										<li><dfn>Mar 10, 2010</dfn> <p>He gave you a really cool guitar</p></li>
+										<li><dfn>Mar 10, 2010</dfn> <p>You challenged him <em>(you lost)</em></p></li>
+										<li><dfn>Mar 10, 2010</dfn> <p>He challenged you <em>(you won)</em></p></li>
+										<li><dfn>Mar 10, 2010</dfn> <p>He gave you a really cool guitar</p></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div id="profile-inventory" class="male">
+							<div class="block first">
+								<div class="slot head">
+									<img src="images/profile/items/61x79/really-big-hair.png" alt="" />
+									<span><a class="edit"></a>Head (auto)</span>
+								</div>
+							</div>
+							<div class="block">
+								<div class="slot neck">
+									<span><a class="edit"></a>Neck</span>
+								</div>
+								<div class="slot top">
+									<img src="images/profile/items/61x79/home-sewn-costume.png" alt="" />
+									<span><a class="edit"></a>Top</span>
+								</div>
+								<div class="slot outwear">
+									<span><a class="edit"></a>Outwear</span>
+								</div>
+							</div>
+							<div class="block">
+								<div class="slot wrist">
+									<span><a class="edit"></a>Wrist</span>
+								</div>
+								<div class="slot pants">
+									<span><a class="edit"></a>Pants</span>
+								</div>
+								<div class="slot ring">
+									<span><a class="edit"></a>Ring</span>
+								</div>
+							</div>
+							<div class="block">
+								<div class="slot instrument">
+									<img src="images/profile/items/61x79/abes-b52.png" alt="" />
+									<span><a class="edit"></a>Instrument</span>
+								</div>
+								<div class="slot feet">
+									<span><a class="edit"></a>Feet</span>
+								</div>
+								<div class="slot souvenir">
+									<img src="images/profile/items/61x79/lucky-guitar-pick.png" alt="" />
+									<span><a class="edit"></a>Souvenir</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="bandmembers">
+						<div class="bandslot">
+							<h3 class="textimage">Band Members</h3>
+						</div>
+						<div class="bandslot member">
+							<a class="delete-trans" href="#"></a>
+							<cite class="membername">Danny Edwards <span>(Funkster)</span></cite>
+							<img class="memberthumb" src="images/profile/memberthumb1.jpg" alt="" />
+							<div class="statspeek">
+								<var class="starpower">34</var>
+								<var class="coolness">45</var>
+							</div>
+							<div class="itempeek">
+								<img src="images/profile/items/61x79/lucky-guitar-pick.png" alt="" />
+								<span>Wardrobe<a href="#" class="edit-small"></a></span>
+							</div>
+							<div class="itempeek">
+								<img src="images/profile/items/61x79/lucky-guitar-pick.png" alt="" />
+								<span>Wardrobe<a href="#" class="edit-small"></a></span>
+							</div>
+						</div>
+						<div class="bandslot member">
+							<a class="delete-trans" href="#"></a>
+							<cite class="membername">Danny Edwards <span>(Funkster)</span></cite>
+							<img class="memberthumb" src="images/profile/memberthumb1.jpg" alt="" />
+							<div class="statspeek">
+								<var class="starpower">34</var>
+								<var class="coolness">45</var>
+							</div>
+							<div class="itempeek">
+								<img src="images/profile/items/61x79/lucky-guitar-pick.png" alt="" />
+								<span>Wardrobe<a href="#" class="edit-small"></a></span>
+							</div>
+							<div class="itempeek">
+								<img src="images/profile/items/61x79/lucky-guitar-pick.png" alt="" />
+								<span>Wardrobe<a href="#" class="edit-small"></a></span>
+							</div>
+						</div>
+						<div class="bandslot member">
+							<a class="delete-trans" href="#"></a>
+							<cite class="membername">Danny Edwards <span>(Funkster)</span></cite>
+							<img class="memberthumb" src="images/profile/memberthumb1.jpg" alt="" />
+							<div class="statspeek">
+								<var class="starpower">34</var>
+								<var class="coolness">45</var>
+							</div>
+							<div class="itempeek">
+								<img src="images/profile/items/61x79/lucky-guitar-pick.png" alt="" />
+								<span>Wardrobe<a href="#" class="edit-small"></a></span>
+							</div>
+							<div class="itempeek">
+								<img src="images/profile/items/61x79/lucky-guitar-pick.png" alt="" />
+								<span>Wardrobe<a href="#" class="edit-small"></a></span>
+							</div>
+						</div>
+						<div class="bandslot nonmember">
+							<em class="available textimage">Available</em>
+							<a class="recruitnow" href="#">Recruit Now!</a>
+						</div>
+						<div class="bandslot nonmember">
+							<em class="available textimage">Available</em>
+							<a class="recruitnow" href="#">Recruit Now!</a>
+						</div>
+						<div class="bandslot nonmember">
+							<em class="locked textimage">Locked</em>
+							<p><span>Available at LEVEL 10</span> Unlock this slot to add a lawyer and increase your percentage from royalties.</p>
+						</div>
+						<div class="bandslot nonmember">
+							<em class="locked textimage">Locked</em>
+						</div>
+					</div>
+					<div id="entourage-items">
+						<h6 class="ext-loud">Other items used by your entourage (<var>45 members</var>)</h6>
+						<div class="block">
+							<div class="itemspace first">
+								<img src="images/profile/items/43x56/item1.png" alt="" />
+								<span class="itemnum rarity0">x99</span>
+							</div>
+							<div class="itemspace">
+								<img src="images/profile/items/43x56/item1.png" alt="" />
+								<span class="itemnum rarity0">x99</span>
+							</div>
+							<div class="itemspace">
+								<img src="images/profile/items/43x56/item1.png" alt="" />
+								<span class="itemnum rarity0">x99</span>
+							</div>
+							<div class="itemspace">
+								<img src="images/profile/items/43x56/item1.png" alt="" />
+								<span class="itemnum rarity0">x99</span>
+							</div>
+							<div class="itemspace">
+								<img src="images/profile/items/43x56/item1.png" alt="" />
+								<span class="itemnum rarity0">x99</span>
+							</div>
+							<div class="itemspace">
+								<img src="images/profile/items/43x56/item1.png" alt="" />
+								<span class="itemnum rarity0">x99</span>
+							</div>
+							<div class="itemspace">
+								<img src="images/profile/items/43x56/item1.png" alt="" />
+								<span class="itemnum rarity0">x99</span>
+							</div>
+							<div class="itemspace">
+								<img src="images/profile/items/43x56/item1.png" alt="" />
+								<span class="itemnum rarity0">x99</span>
+							</div>
+						</div>
+						<div class="block">
+							<div class="itemspace first">
+								<img src="images/profile/items/43x56/item1.png" alt="" />
+								<span class="itemnum rarity0">x99</span>
+							</div>
+							<div class="itemspace">
+								<img src="images/profile/items/43x56/item1.png" alt="" />
+								<span class="itemnum rarity0">x99</span>
+							</div>
+							<div class="itemspace">
+								<img src="images/profile/items/43x56/item1.png" alt="" />
+								<span class="itemnum rarity0">x99</span>
+							</div>
+							<div class="itemspace">
+								<img src="images/profile/items/43x56/item1.png" alt="" />
+								<span class="itemnum rarity0">x99</span>
+							</div>
+							<div class="itemspace">
+								<img src="images/profile/items/43x56/item1.png" alt="" />
+								<span class="itemnum rarity0">x99</span>
+							</div>
+							<div class="itemspace">
+								<img src="images/profile/items/43x56/item1.png" alt="" />
+								<span class="itemnum rarity0">x99</span>
+							</div>
+							<div class="itemspace">
+								<img src="images/profile/items/43x56/item1.png" alt="" />
+								<span class="itemnum rarity0">x99</span>
+							</div>
+							<div class="itemspace">
+								<img src="images/profile/items/43x56/item1.png" alt="" />
+								<span class="itemnum rarity0">x99</span>
+							</div>
+						</div>
+						<div class="block">
+							<div class="itemspace first">
+								<img src="images/profile/items/43x56/item1.png" alt="" />
+								<span class="itemnum rarity0">x99</span>
+							</div>
+							<div class="itemspace">
+								<img src="images/profile/items/43x56/item1.png" alt="" />
+								<span class="itemnum rarity0">x99</span>
+							</div>
+							<div class="itemspace">
+								<img src="images/profile/items/43x56/item1.png" alt="" />
+								<span class="itemnum rarity0">x99</span>
+							</div>
+							<div class="itemspace">
+								<img src="images/profile/items/43x56/item1.png" alt="" />
+								<span class="itemnum rarity0">x99</span>
+							</div>
+							<div class="itemspace">
+								<img src="images/profile/items/43x56/item1.png" alt="" />
+								<span class="itemnum rarity0">x99</span>
+							</div>
+							<div class="itemspace">
+								<img src="images/profile/items/43x56/item1.png" alt="" />
+								<span class="itemnum rarity0">x99</span>
+							</div>
+							<div class="itemspace">
+								<img src="images/profile/items/43x56/item1.png" alt="" />
+								<span class="itemnum rarity0">x99</span>
+							</div>
+							<div class="itemspace">
+								<img src="images/profile/items/43x56/item1.png" alt="" />
+								<span class="itemnum rarity0">x99</span>
+							</div>
+						</div>
+						<div class="block">
+							<div class="itemspace first">
+								<img src="images/profile/items/43x56/item1.png" alt="" />
+								<span class="itemnum rarity0">x99</span>
+							</div>
+							<div class="itemspace">
+								<img src="images/profile/items/43x56/item1.png" alt="" />
+								<span class="itemnum rarity0">x99</span>
+							</div>
+							<div class="itemspace">
+								<img src="images/profile/items/43x56/item1.png" alt="" />
+								<span class="itemnum rarity0">x99</span>
+							</div>
+							<div class="itemspace">
+								<img src="images/profile/items/43x56/item1.png" alt="" />
+								<span class="itemnum rarity0">x99</span>
+							</div>
+							<div class="itemspace">
+								<img src="images/profile/items/43x56/item1.png" alt="" />
+								<span class="itemnum rarity0">x99</span>
+							</div>
+							<div class="itemspace">
+								<img src="images/profile/items/43x56/item1.png" alt="" />
+								<span class="itemnum rarity0">x99</span>
+							</div>
+							<div class="itemspace">
+								<img src="images/profile/items/43x56/item1.png" alt="" />
+								<span class="itemnum rarity0">x99</span>
+							</div>
+							<div class="itemspace">
+								<img src="images/profile/items/43x56/item1.png" alt="" />
+								<span class="itemnum rarity0">x99</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</body>
+</html>

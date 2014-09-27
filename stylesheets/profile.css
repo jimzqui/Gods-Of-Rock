@@ -1,0 +1,488 @@
+/**
+ * Gods of Rock
+ * Copyright (c) 2010 Disruptor Beam LLC
+ * By Jimbo Quijano - jimzqui@yahoo.com
+ *
+ * profile.css
+ * Sets up the styles for the band profile section.
+ *
+ * 01. PROFILE & ENTOURAGE SECTION
+ *	   1. Main Profile
+ *	   2. System Board
+ *     3. Profile Inventroy
+ *	   4. Band Members
+ *	   5. Entourage Items
+ */
+
+
+/* ----------------------------------------------------------------------------------------------------------------
+                                                  01. PROFILE & ENTOURAGE SECTION
+---------------------------------------------------------------------------------------------------------------- */
+
+
+/* ------- 1. Main Profile ------- */
+
+#mainprofile{
+width:535px;
+float:left;
+padding:15px 0 0;
+font-size:11px;
+}
+
+img.profilethumb{
+width:80px;
+height:80px;
+border:3px solid #333;
+float:left;
+margin:0 15px 10px 0;
+}
+
+.bandlogo{
+width:434px;
+float:right;
+text-align:right;
+position:relative;
+padding:10px 0 0;
+}
+
+a.editlogo{
+float:right;
+position:absolute;
+top:0;
+right:0;
+}
+
+.profileinfo{
+width:285px;
+float:left;
+}
+
+.profileinfo  a:link{
+color:#fff;
+text-decoration:underline;
+}
+
+.profileinfo  a:hover{
+text-decoration:none;
+}
+
+.profileinfo ul.info, .profileinfo ul.stats{
+list-style:none;
+margin:0;
+padding:0;
+float:left;
+width:100%;
+}
+
+.profileinfo ul.info li{
+margin:0 0 3px;
+width:100%;
+float:left;
+}
+
+.profileinfo ul.info .name{
+font-size:16px;
+color:#99e9ff;
+float:left;
+margin:0 0 10px;
+min-height:33px;
+}
+
+.profileinfo ul.info .name span{
+font-size:11px;
+color:#fff;
+display:block;
+}
+
+.profileinfo ul.info dfn{
+color:#888;
+float:left;
+margin:0 5px 0 0;
+font-style:normal;
+font-weight:normal;
+font-size:11px;
+}
+
+.profileinfo ul.info .influences{
+width:74px;
+}
+
+.profileinfo ul.stats{
+margin:20px 0 0 -15px;
+}
+
+.profileinfo ul.stats li{
+background:url(../images/profile/bg-stats-li.png) no-repeat scroll left 0;
+width:95px;
+height:90px;
+float:left;
+text-align:center;
+}
+
+.profileinfo ul.stats li:first-child{
+background:none;
+}
+
+.profileinfo ul.stats .starpower{
+background:url(../images/profile/icon-starpower.png) no-repeat scroll center bottom;
+height:100%;
+}
+
+.profileinfo ul.stats .coolness{
+background:url(../images/profile/icon-coolness.png) no-repeat scroll center 52px;
+height:100%;
+}
+
+.profileinfo ul.stats .statname{
+text-transform:uppercase;
+}
+
+.profileinfo ul.stats var{
+display:block;
+font-size:38px;
+}
+
+/* ------- 2. System Board ------- */
+
+#systemboard{
+width:285px;
+float:left;
+}
+
+#systemboard .expandentourage{
+background:url(../images/profile/bg-expandentourage.png) no-repeat;
+width:276px;
+height:187px;
+float:left;
+margin:20px 0 0;
+}
+
+#systemboard .expandentourage h3{
+background:url(../images/profile/label-exdpandyourentourage.png) no-repeat;
+width:271px;
+height:73px;
+float:left;
+margin:-24px 0 0 7px;
+}
+
+#systemboard .expandentourage a.recruitnow2{
+left:52px;
+margin:0;
+position:relative;
+top:95px;
+}
+
+#systemboard .action{
+width:100%;
+float:left;
+}
+
+#systemboard .latest{
+width:100%;
+float:left;
+font-size:12px;
+margin:5px 0 0;
+}
+
+#systemboard .latest h6{
+margin:0 0 10px;
+}
+
+/* ------- 3. Profile Inventory ------- */
+
+#profile-inventory{
+width:224px;
+float:right;
+margin:10px 10px 0 0;
+}
+
+#profile-inventory .block{
+width:100%;
+float:left;
+margin:50px 0 0;
+position:relative;
+}
+
+#profile-inventory .block.first{
+margin:0;
+}
+
+#profile-inventory .slot{
+width:62px;
+height:73px;
+margin:0 0 0 19px;
+float:left;
+position:relative;
+}
+
+#profile-inventory .slot img{
+position:absolute;
+bottom:0;
+}
+
+#profile-inventory .slot span{
+bottom:-18px;
+font-size:10px;
+position:absolute;
+width:75px;
+}
+
+#profile-inventory .slot span a.edit{
+margin:0 3px 0 0;
+}
+
+#profile-inventory.male .slot{
+background-image:url(../images/profile/paperdolls/male-pack.png);
+background-repeat:no-repeat;
+}
+
+#profile-inventory.female .slot{
+background-image:url(../images/profile/paperdolls/female-pack.png);
+background-repeat:no-repeat;
+}
+
+#profile-inventory .head{
+background-position:-82px 0;
+}
+
+#profile-inventory .neck{
+background-position:-1px -111px;
+}
+
+#profile-inventory .top{
+background-position:-82px -111px;
+}
+
+#profile-inventory .outwear{
+background-position:-163px -111px;
+}
+
+#profile-inventory .wrist{
+background-position:-1px -251px;
+}
+
+#profile-inventory .pants{
+background-position:-82px -251px;
+}
+
+#profile-inventory .ring{
+background-position:-163px -251px;
+}
+
+#profile-inventory .instrument{
+background-position:-1px -401px;
+}
+
+#profile-inventory .feet{
+background-position:-82px -401px;
+}
+
+#profile-inventory .souvenir{
+background-position:-163px -401px;
+}
+
+#profile-inventory .neck, #profile-inventory .wrist, #profile-inventory .instrument{
+margin:0;
+}
+
+#profile-inventory .head{
+margin:0 0 0 81px;
+}
+
+/* ------- 4. Band Members ------- */
+
+#bandmembers{
+background:url(../images/profile/bg-bandmembers.png) no-repeat;
+float:left;
+font-size:11px;
+left:-15px;
+padding:90px 15px 0;
+position:relative;
+width:535px;
+}
+
+#bandmembers h3{
+background:url(../images/profile/label-bandmembers.png) no-repeat;
+width:146px;
+height:77px;
+float:left;
+margin:10px 0 0 60px;
+}
+
+#bandmembers .bandslot{
+width:231px;
+height:107px;
+float:left;
+margin:0 6.2px 15px;
+padding:12px;
+position:relative;
+}
+
+#bandmembers .member{
+background:url(../images/profile/bg-member.png) no-repeat;
+}
+
+#bandmembers .nonmember{
+background:url(../images/profile/bg-nonmember.png) no-repeat;
+}
+
+#bandmembers .nonmember em{
+width:86px;
+height:87px;
+float:left;
+position:absolute;
+top:-1px;
+left:-1px;
+}
+
+#bandmembers .nonmember em.available{
+background:url(../images/profile/label-available.png) no-repeat;
+}
+
+#bandmembers .nonmember em.locked{
+background:url(../images/profile/label-locked.png) no-repeat;
+}
+
+#bandmembers .nonmember p{
+width:145px;
+float:left;
+font-size:12px;
+margin:25px 0 0 50px;
+position:relative;
+z-index:1;
+}
+
+#bandmembers .nonmember p span{
+display:block;
+color:#99e9ff;
+}
+
+#bandmembers .nonmember .recruitnow{
+margin:35px 0 0 35px;
+position:relative;
+z-index:1;
+}
+
+.member .membername{
+color:#99E9FF;
+display:block;
+margin:0 0 12px;
+}
+
+.member .membername span{
+color:#fff;
+}
+
+.member img.memberthumb{
+float:left;
+}
+
+.member .statspeek{
+width:35px;
+float:left;
+margin:0 0 0 10px;
+}
+
+.member .statspeek var{
+width:100%;
+float:left;
+font-size:13px;
+text-align:center;
+}
+
+.statspeek .starpower{
+background:url(../images/profile/icon-starpower-small.png) no-repeat scroll center 0;
+padding:24px 0 0;
+margin:0 0 5px;
+}
+
+.statspeek .coolness{
+background:url(../images/profile/icon-coolness-small.png) no-repeat center 0;
+padding:18px 0 0;
+}
+
+.member .itempeek{
+width:43px;
+float:left;
+position:relative;
+margin:0 0 0 10px;
+}
+
+.member .itempeek img{
+width:100%;
+}
+
+.member .itempeek span{
+font-size:10px;
+float:left;
+}
+
+.member .itempeek span a.edit-small{
+float:left;
+margin:0 0 0 15px;
+}
+
+.member a.delete-trans{
+float:right;
+position:absolute;
+top:0;
+right:1px;
+}
+
+/* ------- 5. Entourage Items ------- */
+
+#entourage-items{
+background:url(../images/profile/bordertop-entourage.png) no-repeat;
+float:left;
+left:-15px;
+margin:-1px 0 0;
+padding:15px;
+position:relative;
+width:535px;
+}
+
+#entourage-items h6 var{
+text-transform:none;
+font-weight:bold;
+}
+
+#entourage-items .block{
+width:100%;
+float:left;
+margin:15px 0 0;
+}
+
+#entourage-items .itemspace{
+width:43px;
+height:56px;
+float:left;
+position:relative;
+margin:0 0 0 25.5px
+}
+
+#entourage-items .itemspace.first{
+margin:0
+}
+
+#entourage-items .itemspace img{
+width:100%;
+margin:0;
+}
+
+#entourage-items .itemnum{
+bottom:0;
+font-size:11px;
+position:absolute;
+right:0;
+text-align:center;
+padding:0 8px;
+-moz-border-radius:3px;
+}
+
+.itemnum.rarity0{
+background:#827224;
+}
+
+.itemnum.rarity1{
+background:#582482;
+}

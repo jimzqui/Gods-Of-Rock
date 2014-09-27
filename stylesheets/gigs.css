@@ -1,0 +1,657 @@
+/**
+ * Gods of Rock
+ * Copyright (c) 2010 Disruptor Beam LLC
+ * By Jimbo Quijano - jimzqui@yahoo.com
+ *
+ * gigs.css
+ * Sets up the styles for the gigs section.
+ *
+ * 01. GIGS SECTION
+ *	   1. Main
+ *	   2. Expanded Gig
+ *	   3. Collapsed Gig
+ *	   4. System Info
+ */
+
+
+/* ----------------------------------------------------------------------------------------------------------------
+                                                  01. GIGS SECTION
+---------------------------------------------------------------------------------------------------------------- */
+
+
+/* ------- 1. Main ------- */
+
+.gig{
+float:left;
+overflow:hidden;
+padding:15px 0 0 0;
+width:535px;
+}
+
+.gig.first{
+/*border-top:1px dashed #737373;*/
+}
+
+.heading{
+display:block;
+height:20px;
+overflow:hidden;
+}
+
+.expanded .gigwrap{
+display:block;
+overflow:hidden;
+}
+
+.expanded .leftpart{
+width:362px;
+float:left;
+}
+
+.icons{
+float:left;
+margin:0 0 0 3px;
+}
+
+.icons img{
+margin:0 0 0 2px;
+height:19px;
+float:left;
+}
+
+.detail-money{
+color:#18cb00;
+}
+
+.detail-xp{
+color:#c022dd;
+}
+
+.detail-insp{
+color:#ff0000;
+}
+
+.detail-fans{
+color:#eeac00;
+}
+
+.detail-nrg{
+color:#2ab0b1;
+}
+
+.detail-mst{
+color:#6b9285;
+}
+
+.itemspace img{
+margin:0 0 0 2px;
+}
+
+.itemspace.first{
+margin:0 !important;
+}
+
+/* ------- 2. Expanded Gig ------- */
+
+.expanded .gigtitle{
+background:url(../images/minus-sign.png) no-repeat scroll 0 10px;
+color:#6b9285;
+font-size:16px;
+font-weight:bold;
+float:left;
+padding:0 0 0 15px;
+cursor:pointer;
+overflow:hidden;
+white-space:nowrap;
+max-width:242px;
+}
+
+.expanded .description{
+width:335px;
+float:left;
+margin:3px 0 0 15px;
+font-style:italic;
+line-height:18px;
+color:#b2b2b2;
+}
+
+.expanded .description span{
+display:block;
+text-transform:uppercase;
+font-style:normal;
+font-weight:bold;
+font-size:11px;
+color:#c3c3c3;
+}
+
+.expanded .rightpart{
+width:168px;
+float:right;
+margin:0 0 0 5px;
+}
+
+.expanded .rewards{
+width:168px;
+float:left;
+}
+
+.expanded .rewards .texthead{
+display:block;
+text-transform:uppercase;
+color:#6b9285;
+font-weight:bold;
+margin:0 0 5px 0;
+}
+
+.expanded .reward{
+display:block;
+font-weight:bold;
+}
+
+.expanded .infos{
+display:block;
+height:84px;
+margin:15px 0 0 15px;
+}
+
+.expanded .infosbox{
+width:158px;
+height:79px;
+float:left;
+padding:0 5px 5px 5px;
+}
+
+.expanded .infosbox .texthead{
+color:#fff;
+text-transform:uppercase;
+font-weight:bold;
+font-size:11px;
+padding:2px 0 0 5px;
+display:block;
+margin:0 0 3px 0;
+}
+
+.expanded .costs{
+background:url(../images/expcosts-bg.png) no-repeat;
+}
+
+.expanded .requirements{
+background:url(../images/exprequirements-bg.png) no-repeat;
+}
+
+.expanded .chances{
+background:url(../images/expchances-bg.png) no-repeat;
+}
+
+.expanded .costs, .expanded .requirements{
+margin:0 8px 0 0;
+}
+
+.expanded .itemspace{
+background:url(../images/itemspace-bg.png) no-repeat scroll 4px 4px;
+width:50px;
+height:58px;
+float:left;
+overflow:hidden;
+margin:0 0 0 4px;
+text-align:center;
+}
+
+.expanded .notmet .border{
+background:url(../images/expnotmet-bg.png) no-repeat;
+width:46px;
+height:53px;
+display:block;
+position:relative;
+top:-51px;
+left:2px;
+}
+
+.expanded .met .border{
+background:url(../images/expnotmet-bg.png) no-repeat;
+width:46px;
+height:53px;
+display:block;
+position:relative;
+top:-51px;
+left:2px;
+visibility:hidden;
+}
+
+.expanded .requirements .itemnum{
+background:url(../images/expitemnum1-bg.png) no-repeat;
+color:#fff;
+font-weight:bold;
+font-size:11px;
+width:22px;
+height:16px;
+display:block;
+text-align:center;
+z-index:99;
+position:relative;
+top:-73px;
+left:30px;
+}
+
+.expanded .costs .itemnum, .expanded .chances .itemnum, .systemmessage .itemnum{
+background:url(../images/expitemnum2-bg.png) no-repeat;
+color:#fff;
+font-weight:bold;
+font-size:11px;
+width:22px;
+height:16px;
+display:block;
+text-align:center;
+z-index:99;
+position:relative;
+top:-96px;
+left:30px;
+}
+
+.expanded .unknown img{
+margin:7px 0 0 11px;
+}
+
+.expanded .met img, .expanded .notmet img{
+width:43px;
+height:56px;
+display:block;
+margin:0 0 0 3px;
+}
+
+.expanded .systemmessage{
+background:url(../images/systemmessage-bg.png) repeat-x 0 bottom;
+width:100%;
+height:66px;
+float:left;
+overflow:hidden;
+}
+
+/* ------- 3. Collapsed Gig ------- */
+
+.collapsed .gigwrap{
+width:333px;
+float:left;
+}
+
+.collapsed .systemmessage{
+display:none;
+}
+
+.collapsed .leftpart, .collapsed .rightpart{
+width:100%;
+float:left;
+}
+
+.collapsed .rewards{
+display:block;
+margin:6px 0 0 15px;
+}
+
+.collapsed .rewards .texthead{
+display:none;
+}
+
+.collapsed .reward{
+display:inline;
+font-weight:normal;
+margin:0 5px 0 0;
+}
+
+.collapsed .gigtitle{
+background:url(../images/plus-sign.png) no-repeat scroll 0 6px;
+color:#6B9285;
+cursor:pointer;
+float:left;
+font-size:16px;
+font-weight:bold;
+overflow:hidden;
+padding:0 0 0 15px;
+white-space:nowrap;
+max-width:213px;
+}
+
+.collapsed .infos{
+float:right;
+height:48px;
+width:198px;
+}
+
+.collapsed .infosbox{
+width:92px;
+height:46px;
+float:left;
+padding:0 2px 2px 2px;
+}
+
+.collapsed .infosbox .texthead{
+color:#fff;
+text-transform:uppercase;
+font-weight:bold;
+font-size:10px;
+padding:1px 0 0 2px;
+display:block;
+margin:0 0 3px 0;
+}
+
+.collapsed .costs{
+background:url(../images/colcosts-bg.png) no-repeat;
+margin:0 6px 0 0;
+}
+
+.collapsed .requirements{
+background:url(../images/colrequirements-bg.png) no-repeat;
+margin: 0;
+}
+
+.collapsed .chances{
+display:none;
+}
+
+.collapsed .itemspace{
+float:left;
+height:28px;
+margin:0 0 0 4px;
+overflow:hidden;
+width:28px;
+}
+
+.collapsed .notmet .border{
+background:url(../images/colnotmet-bg.png) no-repeat;
+width:23px;
+height:26px;
+display:block;
+position:relative;
+left:2px;
+top:-26px;
+}
+
+.collapsed .met .border{
+background:url(../images/colnotmet-bg.png) no-repeat;
+width:23px;
+height:26px;
+display:block;
+position:relative;
+left:3px;
+top:-26px;
+visibility:hidden;
+}
+
+.collapsed .requirements .itemnum{
+background:url(../images/colitemnum1-bg.png) no-repeat;
+color:#fff;
+font-weight:bold;
+font-size:10px;
+width:19px;
+height:12px;
+display:block;
+text-align:center;
+z-index:99;
+position:relative;
+top:-42px;
+left:9px;
+}
+
+.collapsed .costs .itemnum, .collapsed .chances .itemnum{
+background:url(../images/colitemnum2-bg.png) no-repeat;
+color:#fff;
+font-weight:bold;
+font-size:10px;
+width:19px;
+height:12px;
+display:block;
+text-align:center;
+z-index:99;
+position:relative;
+top:-48px;
+left:9px;
+}
+
+.collapsed  .detail{
+width:24px;
+height:26px;
+margin:2px;
+float:left;
+text-align:center;
+font-size:9px;
+font-weight:bold;
+}
+
+.collapsed .detail span{
+font-weight:normal;
+display:block;
+}
+
+.collapsed .unknown img{
+width:22px;
+height:28px;
+}
+
+.collapsed .met img, .collapsed .notmet img{
+width:22px;
+height:28px;
+display:block;
+margin:0 0 0 2px;
+}
+
+/* ------- 4. System Info ------- */
+
+.systeminfos{
+display:block;
+height:auto;
+border-bottom:1px dashed #737373;
+padding:10px 0 0 15px;
+}
+
+.bars{
+display:block;
+height:26px;
+margin:0 0 10px 0;
+}
+
+.gigmastery{
+width:320px;
+height:22px;
+float:left;
+padding:4px 0 0 0;
+}
+
+.gigmastery span{
+height:18px;
+color:#ff0000;
+text-transform:uppercase;
+font-weight:bold;
+float:left;
+margin:2px 5px 0 0;
+}
+
+.gigprogressbar{
+background:url(../images/gigprogressbar.png) no-repeat;
+width:200px;
+height:18px;
+float:left;
+}
+
+.gigprogress-wrap{
+height:14px;
+width:173px;
+float:left;
+margin:6px 0 0 0;
+}
+
+.gigprogress{
+background:url(../images/gigprogress.png) no-repeat;
+height:14px;
+float:left;
+}
+
+a.actionbutton-met{
+background:url(../images/actionbutton-met.png) no-repeat;
+width:99px;
+height:16px;
+float:right;
+padding:5px 31px 5px 53px;
+text-transform:uppercase;
+font-size:11px;
+font-weight:bold;
+color:#fff;
+text-shadow:2px 3px 4px #000 !important;
+text-align:center;
+}
+
+.actionbutton-notmet{
+background:url(../images/actionbutton-notmet.png) no-repeat;
+width:99px;
+height:16px;
+float:right;
+padding:5px 31px 5px 53px;
+text-transform:uppercase;
+font-size:11px;
+font-weight:bold;
+text-shadow:2px 3px 4px #000 !important;
+text-align:center;
+}
+
+a.actionbutton-met:hover{
+text-decoration:none;
+color:cyan;
+}
+a.actionbutton-met{
+text-decoration:none;
+color:#e2e2e2;
+}
+
+a.actionbutton-notmet{
+text-decoration:none;
+color:#cccccc;
+}
+
+a.actionbutton-notmet:hover{
+text-decoration:none;
+color:#cccccc;
+}
+
+.systemmessage .message{
+width:118px;
+height:46px;
+float:left;
+padding:6px 0 0 0;
+margin:0 3px 0 0;
+}
+
+.systemspace{
+background:url(../images/systemspace-bg.png) no-repeat scroll 4px 4px;
+width:50px;
+height:58px;
+float:left;
+overflow:hidden;
+text-align:center;
+}
+
+.detail{
+width:44px;
+height:40px;
+margin:14px 2px 4px 4px;
+float:left;
+text-align:center;
+font-size:11px;
+font-weight:bold;
+}
+
+.detail span{
+font-weight:normal;
+display:block;
+}
+
+.systemdetail-money{
+color:#18cb00;
+}
+
+.systemdetail-money span{
+color:#2d6c17;
+font-weight:bold;
+}
+
+.systemdetail-xp{
+color:#c022dd;
+}
+
+.systemdetail-xp span{
+font-family:'arial black';
+color:#60116f;
+font-weight:bold;
+font-size:20px;
+font-weight:bold;
+letter-spacing:-1px;
+margin:-4px 0 0;
+}
+
+.systemdetail-insp{
+color:#ff0000;
+}
+
+.systemdetail-insp span{
+color:#780000;
+font-family:'arial black';
+font-size:14px;
+font-weight:bold;
+letter-spacing:-1px;
+margin:-2px 0 0;
+}
+
+
+.systemdetail-fans{
+color:#eeac00;
+}
+
+.systemdetail-fans span{
+color:#775600;
+font-size:12px;
+font-weight:bold;
+}
+
+.systemdetail-nrg{
+color:#2ab0b1;
+}
+
+.systemdetail-nrg span{
+color:#1f8788;
+font-family:'arial black';
+font-size:14px;
+font-weight:bold;
+letter-spacing:-1px;
+margin:-2px 0 0;
+}
+
+.systemdetail-mst{
+color:#6b9285;
+}
+
+.systemdetail-mst span{
+color:#4c6b61;
+font-family:'arial black';
+font-size:14px;
+font-weight:bold;
+letter-spacing:-1px;
+margin:-2px 0 0;
+}
+
+.systemdetail-newgig{
+color:#ffbf70;
+font-size:13px;
+font-weight:bold;
+line-height:12px;
+}
+
+.systemdetail-newgig span{
+color:#fff;
+font-size:9px;
+}
+
+.systemdetail-levelup{
+background:url(../images/level-up.png) no-repeat scroll 3px 2px;
+overflow:hidden;
+text-indent:3000px;
+white-space:nowrap;
+cursor:text;
+}

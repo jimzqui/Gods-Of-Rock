@@ -1,0 +1,331 @@
+/**
+ * Gods of Rock
+ * Copyright (c) 2010 Disruptor Beam LLC
+ * By Jimbo Quijano - jimzqui@yahoo.com
+ *
+ * style.css
+ * Sets up the main and basic styles.
+ *
+ * 01. BATTLE OF THE BANDS
+ *	   1. Concert
+ *	   2. Yellow Box
+ *	   3. Posse
+ */
+
+
+/* ----------------------------------------------------------------------------------------------------------------
+                                                  01. BATTLE OF THE BANDS
+---------------------------------------------------------------------------------------------------------------- */
+
+
+/* ------- 1. Concert ------- */
+
+#concert{
+background:url(../images/challenge/concertbg1.jpg) no-repeat;
+width:532px;
+height:340px;
+float:left;
+padding:10px;
+position:relative;
+left:-8px;
+top:8px;
+}
+
+#concert .concertname{
+color:#f4ad00;
+font-size:18px;
+line-height:15px;
+}
+
+#concert .timeremain{
+color:#999;
+font-size:14px;
+font-weight:bold;
+float:right;
+}
+
+#concert .timeremain var{
+color:#fff;
+font-weight:bold;
+}
+
+#concert .concertbar{
+width:532px;
+float:left;
+margin:10px 0 0;
+}
+
+#concert .concertbar h6{
+text-transform:uppercase;
+color:#fff;
+font-weight:bold;
+font-size:12px;
+padding:0 0 0 8px;
+}
+
+#concert .concertbar .barholder{
+width:532px;
+height:10px;
+float:left;
+}
+
+#concert .concertbar .barholder .bar{
+background:url(../images/challenge/encore.png) repeat-x;
+height:10px;
+float:left;
+}
+
+#concert .concertbar.fading .barholder .bar{
+background:url(../images/challenge/fading.png) repeat-x;
+height:10px;
+float:left;
+}
+
+#concert .concertbar .barholder .arrow{
+background:url(../images/challenge/encore-arrow.png) no-repeat;
+width:12px;
+height:9px;
+float:left;
+}
+
+#concert .concertbar.fading .barholder .arrow{
+background:url(../images/challenge/fading-arrow.png) no-repeat;
+}
+
+#concert .concertbar .barholder .caption{
+font-weight:bold;
+font-size:10px;
+color:#000;
+text-transform:uppercase;
+float:left;
+margin:-2px 0 0 -55px;
+}
+
+#concert .concertbar.fading .barholder .caption{
+margin:-2px 0 0 -45px;
+}
+
+#concert .concertbar .barhilight{
+background:url(../images/challenge/barhilight.png) no-repeat;
+width:532px;
+height:10px;
+float:left;
+margin:-10px 0 0;
+}
+
+#concert .concertbar.fading .barhilight{
+background:url(../images/challenge/barhilight-fade.png) no-repeat;
+}
+
+#concertitems{
+background:url(../images/challenge/bg-concertitems.png) no-repeat scroll 0 bottom;
+width:552px;
+height:85px;
+float:left;
+position:relative;
+left:-8px;
+margin:-22px 0 0;
+}
+
+#concertitems .scrollable{
+width:473px;
+height:80px;
+float:left;
+position:relative; 
+overflow:hidden;
+left:39px;
+padding:5px 0 0;
+}
+
+#concertitems .items{
+width:20000em; 
+position:absolute; 
+}
+
+#concertitems .itembatch{
+float:left;
+}
+
+#concertitems .item{
+width:43px;
+height:56px;
+float:left;
+margin:0 5px;
+}
+
+#concertitems .item a{
+text-align:center;
+font-size:11px;
+font-weight:bold;
+display:block;
+text-decoration:underline;
+}
+
+#concertitems .item a:hover{
+text-decoration:none;
+}
+
+#concertitems .rightarrow{
+background:url(../images/challenge/rightarrow.png) no-repeat;
+width:14px;
+height:38px;
+float:left;
+text-indent:3000px;
+white-space:nowrap;
+overflow:hidden;
+position:absolute;
+top:15px;
+right:10px;
+cursor:pointer;
+}
+
+#concertitems .leftarrow{
+background:url(../images/challenge/leftarrow.png) no-repeat;
+width:14px;
+height:38px;
+float:left;
+text-indent:3000px;
+white-space:nowrap;
+overflow:hidden;
+position:absolute;
+top:15px;
+left:10px;
+cursor:pointer;
+}
+
+#challenge-main{
+background:url(../images/challenge/bg-challengecontent.png) no-repeat;
+width:552px;
+float:left;
+position:relative;
+left:-8px;
+padding:10px 0;
+}
+
+#challenge-left{
+width:311px;
+float:left;
+}
+
+#challenge-right{
+width:221px;
+float:left;
+margin:0 0 0 15px;
+}
+
+
+/* ------- 2. Yellow Box ------- */
+
+.yellowbox{
+background:url(../images/challenge/bg-yellowbox.png) no-repeat;
+width:201px;
+height:195px;
+float:left;
+padding:10px;
+color:#000;
+}
+
+.yellowbox h6{
+font-weight:bold;
+font-size:18px;
+color:#fff;
+text-align:center;
+text-shadow:0 2px 3px #000;
+margin:-8px 0 5px;
+}
+
+.yellowbox  p{
+margin:5px 0 0;
+}
+
+.yellowbox .dark{
+font-weight:bold;
+}
+
+#callposse .megamosh{
+float:left;
+font-size:10px;
+color:#000;
+line-height:19px;
+margin:5px 0 0;
+letter-spacing:-0.5px;
+}
+
+#callposse .megamosh em{
+color:#00aac3;
+font-size:24px;
+font-weight:bold;
+display:block;
+font-style:normal;
+letter-spacing:-0.15px;
+}
+
+#callposse .callnow{
+float:right;
+margin:-10px 0 0;
+}
+
+/* ------- 3. Posse ------- */
+
+#yourposse{
+width:100%;
+float:left;
+margin:10px 0 0;
+}
+
+#yourposse h6{
+color:#fff;
+}
+
+#yourposse .facebook-thumbup{
+margin:2px 0 0;
+}
+
+#yourposse .thumbup-caption{
+float:left;
+font-style:italic;
+width:189px;
+margin:0 0 0 10px;
+line-height:13px;
+}
+
+#yourposse .theposse{
+width:100%;
+float:left;
+list-style:none;
+margin:10px 0 0;
+padding:0;
+}
+
+#yourposse .theposse li{
+width:211px;
+float:left;
+padding:5px;
+}
+
+#yourposse .theposse li:nth-child(odd){
+background:#272727;
+}
+
+#yourposse .theposse .possethumb{
+background:#ccc;
+width:50px;
+height:50px;
+float:left;
+}
+
+#yourposse .theposse .posseinfo{
+float:left;
+width:151px;
+margin:0 0 0 10px;
+}
+
+#yourposse .theposse .possename{
+display:block;
+margin:0 0 5px;
+}
+
+#yourposse .posseinfo .thumbup-caption{
+width:119px;
+margin-top:5px;
+}

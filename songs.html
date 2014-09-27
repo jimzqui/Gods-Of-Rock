@@ -1,0 +1,296 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link rel="stylesheet" href="stylesheets/main.css" type="text/css" />
+<link rel="stylesheet" href="stylesheets/multicheck.css" type="text/css" />
+<link rel="stylesheet" href="stylesheets/style.css" type="text/css" />
+<link rel="stylesheet" href="stylesheets/typography.css" type="text/css" />
+<link rel="stylesheet" href="stylesheets/home.css" type="text/css" />
+<link rel="stylesheet" href="stylesheets/gigs.css" type="text/css" />
+<link rel="stylesheet" href="stylesheets/equipments.css" type="text/css" />
+<link rel="stylesheet" href="stylesheets/songs.css" type="text/css" />
+<link rel="stylesheet" href="stylesheets/profile.css" type="text/css" />
+<link rel="stylesheet" href="stylesheets/talents.css" type="text/css" />
+<link rel="stylesheet" href="stylesheets/band.css" type="text/css" />
+<link href="images/favicon.ico" rel="shortcut icon"/>
+<script src="javascripts/jquery-1.3.2.min.js" language="javascript" type="text/javascript"></script>
+<script src="javascripts/jquery-ui-1.7.2.custom.min.js" language="javascript" type="text/javascript"></script>
+<script src="javascripts/jquery.tooltip.js" language="javascript" type="text/javascript"></script>
+<script src="javascripts/jquery.tools.min.js" language="javascript" type="text/javascript"></script>
+<script src="javascripts/jquery.spinner.js" language="javascript" type="text/javascript"></script>
+<script src="javascripts/jquery.pagination.js" language="javascript" type="text/javascript"></script>
+<script src="javascripts/jquery.loader.js" language="javascript" type="text/javascript"></script>
+<script src="javascripts/jquery.gor.js" language="javascript" type="text/javascript"></script>
+<script src="javascripts/misc.js" language="javascript" type="text/javascript"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="leftwrap">
+			<div id="logowrap">
+				<a href="#"><img border="0" id="logo" alt="Gods of Rock logo" src="images/blank.png" /></a>
+				<span id="level">LEVEL 37</span>
+			</div>
+			<div id="sidemenu">
+				<span id="stagename">[Stage Name]</span>
+				<div id="leftnav">
+					<ul>
+						<li>
+							<a href="#">Home</a>
+						</li>
+						<li>
+							<a href="#">Profile</a>
+						</li>
+						<li>
+							<a href="#">Gifts</a>
+						</li>
+						<li>
+							<a href="#">Songs</a>
+						</li>
+						<li>
+							<a href="#">Battle of the Bands</a>
+						</li>
+						<li>
+							<a href="#">Gigs</a>
+						</li>
+						<li>
+							<a href="#">Inventory</a>
+						</li>
+						<li>
+							<a href="#">Marketplace</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="rightwrap">
+			<div id="header">
+				<div id="statsmenu">
+					<ul>
+						<li><a class="energy">
+							<span class="statsname">ENERGY</span><span class="statsnum"><span id="energy_value">10</span>/10</span>
+							<span class="statsinfo"><span id="energy_ticker"></span>
+						</span></a></li>
+						<li><a class="inspiration">
+							<span class="statsname">INSPIRATION</span>
+							<span class="statsnum"><span id="inspiration_value">0</span>/0</span>
+							<span class="statsinfo"><span id="inspiration_ticker"></span>
+						</span></a></li>
+						<li><a class="funds">
+							<span class="statsname">FUNDS</span>
+							<span class="statsnum">$500</span>
+							<span class="statsinfo">+$0/day</span>
+						</a></li>
+						<li><a class="fans">
+							<span class="statsname">FANS</span>
+							<span class="statsnum">0</span>
+							<span class="statsinfo">+0/day</span>
+						</a></li>
+					</ul>
+				</div>
+				<div id="xpwrap">
+					<div id="xpbar">
+						<div class="progressbar tooltip" title="45% to Next Level">
+							<img class="progress" src="images/stats/progressbar.gif" alt="" style="width:45%" />
+							<span class="guitarfrets"></span>
+						</div>
+						<div class="xp">
+							<span class="xp-label">Experience</span>
+							<span class="experience">92,338,765 / 99,932,999</span>
+						</div>
+						<div id="buffbar">
+							<div class="buffitem first"></div>
+							<div class="buffitem"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="maintabs">
+				<ul class="tabs">
+					<li class="active"><a href="#">Tab 1</a></li>
+					<li><a href="#">Tab 2</a></li>
+					<li><a href="#">Tab 3</a></li>
+				</ul>
+			</div>
+			<div class="clearfix"></div>
+			<div id="content">
+				<div id="inner">
+					<p>Creating songs uses inspiration but gives you experience. Once you have signed with a record label, 
+					you may record your songs to begin building a continuous stream of income from royalties.</p>
+					<p class="songintro"><a class="createsong">requires 3 inspiration points</a>
+					Below are songs you've started but have not recorded yet. You may continue to improve them with 
+					new lyrics and instruments up until you record them.
+					</p>
+					<div id="songform" style="display:none">
+						<div class="song collapsed">
+							<div class="songhead">
+								<form action="" method="post">
+									<input type="text" name="name" size="30" value="" id="song_name" />
+									<a class="randomtitle">Get Random Title</a>
+									<input type="submit" name="" value="savesong" class="savesong">
+									<a class="cancelsong">Cancel</a>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="song collapsed">
+						<div class="songhead">
+							<span id="27" class="songname">My Sweet Katelyn</span>
+							<div class="songbar">
+								<span style="width:20%"></span>
+								<div class="scale"></div>
+							</div>
+						</div>
+						<div class="songbody">
+							<a class="recordsong" href="#">Record</a>
+							<span class="songinfo"><dfn>Influences:</dfn> Rock</span>
+							<div class="scalebars">
+								<div class="scalebar">
+									<img class="trebleclef" src="images/songs/trebleclef.png" alt="" />
+									<div class="songitems">
+										<div class="songitem">
+											<a class="editsongitem" style="display:none">Edit</a>
+											<img src="images/songs/items/21x27/item1.png" alt="" />
+										</div>
+										<div class="songitem empty"></div>
+										<div class="songitem empty"></div>
+										<div class="songitem empty"></div>
+									</div>
+									<a class="addlyric">Click to Add Lyric</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="song collapsed">
+						<div class="songhead">
+							<span class="songname">My Sweet Katelyn</span>
+							<div class="songbar">
+								<span style="width:20%"></span>
+								<div class="scale"></div>
+							</div>
+						</div>
+						<div class="songbody">
+							<a class="recordsong disabled" href="#">Record</a>
+							<span class="songinfo"><dfn>Influences:</dfn> Rock</span>
+							<div class="scalebars">
+								<div class="scalebar">
+									<img class="trebleclef" src="images/songs/trebleclef.png" alt="" />
+									<div class="songitems">
+										<div class="songitem empty"></div>
+										<div class="songitem empty"></div>
+										<div class="songitem empty"></div>
+										<div class="songitem empty"></div>
+									</div>
+									<a class="addlyric">Click to Add Lyric</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="song collapsed">
+						<div class="songhead">
+							<span class="songname">My Sweet Katelyn</span>
+							<div class="songbar">
+								<span style="width:20%"></span>
+								<div class="scale"></div>
+							</div>
+						</div>
+						<div class="songbody">
+							<a class="recordsong disabled" href="#">Record</a>
+							<span class="songinfo"><dfn>Influences:</dfn> Rock</span>
+							<div class="scalebars">
+								<div class="scalebar">
+									<img class="trebleclef" src="images/songs/trebleclef.png" alt="" />
+									<div class="songitems">
+										<div class="songitem"><img src="images/songs/items/21x27/item1.png" alt="" /></div>
+										<div class="songitem empty"></div>
+										<div class="songitem empty"></div>
+										<div class="songitem empty"></div>
+									</div>
+									<a class="addlyric">Click to Add Lyric</a>
+								</div>
+								<div class="scalebar">
+									<img class="trebleclef" src="images/songs/trebleclef.png" alt="" />
+									<div class="songitems">
+										<div class="songitem empty"></div>
+										<div class="songitem empty"></div>
+										<div class="songitem empty"></div>
+										<div class="songitem empty"></div>
+									</div>
+									<a class="addlyric">Click to Add Lyric</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="song collapsed">
+						<div class="songhead">
+							<span class="songname">My Sweet Katelyn</span>
+							<div class="songbar">
+								<span style="width:20%"></span>
+								<div class="scale"></div>
+							</div>
+						</div>
+						<div class="songbody">
+							<a class="recordsong disabled" href="#">Record</a>
+							<span class="songinfo"><dfn>Influences:</dfn> Rock</span>
+							<div class="scalebars">
+								<div class="scalebar">
+									<img class="trebleclef" src="images/songs/trebleclef.png" alt="" />
+									<div class="songitems">
+										<div class="songitem"><img src="images/songs/items/21x27/item1.png" alt="" /></div>
+										<div class="songitem empty"></div>
+										<div class="songitem empty"></div>
+										<div class="songitem empty"></div>
+									</div>
+									<a class="addlyric">Click to Add Lyric</a>
+								</div>
+								<div class="scalebar">
+									<img class="trebleclef" src="images/songs/trebleclef.png" alt="" />
+									<div class="songitems">
+										<div class="songitem"><img src="images/songs/items/21x27/item1.png" alt="" /></div>
+										<div class="songitem empty"></div>
+										<div class="songitem empty"></div>
+										<div class="songitem empty"></div>
+									</div>
+									<a class="addlyric">Click to Add Lyric</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="itemchooser">
+						<span class="itemname">Head (auto)</span>
+						<span class="star stat">Star</span>
+						<span class="cool stat">Cool</span>
+						<a class="cancelequip">Cancel</a>
+						<div id="items">
+							<ul>
+								<li>	
+									<a class="rarity1 equip met tooltip" rel="{'status':'','owned':'2','max_rank':'','rarity':'1','name':'Rockin\' Riff','subname':'Level 1 Song Instrumental','image_big':'items/default-large.png','desc':'','details':'','cost_type':'','cost':'','cost_req':'','flavor':'','time':'','remaining':'','buy':'0','sell':'0','gift':'0','wish':'0','archetype_id':'136','id':'556','artist':'','tooltip_image':'items/default-small.png','default_quantity':'0','category':'','route':''}" style="cursor: pointer;">x2 [Rockin' Riff]</a>
+									<a class="star"></a>
+									<a class="cool"></a>
+									<a href="/song/improve?class=equipitem&amp;item_id=556">[Use]</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div id="recpopup" style="display:none">
+						<div class="recordmodal">
+							<h5>Now Recording: <span class="recsongname"></span></h5>
+							<div class="soundwaves">
+								<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="750" height="465">
+								<param name="movie" value="flash/soundwaves.swf">
+								<param name="quality" value="high">
+								<param name="bgcolor" value="#000">
+								<param name="wmode" value="transparent">
+								<embed src="flash/soundwaves.swf" width="750" height="465" quality="high" bgcolor="#000" wmode="transparent" type="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer"></embed>
+								</object>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</body>
+</html>
